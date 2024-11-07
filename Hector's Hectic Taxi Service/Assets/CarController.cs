@@ -6,6 +6,10 @@ public class CarController : MonoBehaviour
 {
     public WheelColliders colliders;
     public WheelMeshes wheelMeshes;
+    public float gasInput;
+    public float steeringInput;
+
+    public float motorPower;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +20,23 @@ public class CarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CheckInput();
+        ApplyMotor();
         ApplyWheel();
+    }
+
+    //Checking the inputs <--- MIGHT CHANGE
+    void CheckInput()
+    {
+        gasInput = Input.GetAxis("Vertical");
+        steeringInput = Input.GetAxis("Horizontal");
+    }
+
+    //The engine and the application of power
+    void ApplyMotor()
+    {
+        colliders.RLWheel.motorTorque = motorPower * gasInput;
+        colliders.RRWheel.motorTorque = motorPower * gasInput;
     }
 
     //Constant updater for wheels
