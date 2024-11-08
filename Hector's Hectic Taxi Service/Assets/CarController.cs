@@ -33,13 +33,14 @@ public class CarController : MonoBehaviour
     //Checking the inputs <--- MIGHT CHANGE
     void CheckInput()
     {
-        gasInput = Input.GetAxis("Vertical");
-        steeringInput = Input.GetAxis("Horizontal");
+        gasInput = Input.GetAxisRaw("Vertical");
+        steeringInput = Input.GetAxisRaw("Horizontal");
     }
 
     //The engine and the application of power
     void ApplyMotor()
     {
+        colliders.FWheel.motorTorque = motorPower * gasInput * Time.fixedDeltaTime;
         colliders.RLWheel.motorTorque = motorPower * gasInput * Time.fixedDeltaTime;
         colliders.RRWheel.motorTorque = motorPower * gasInput * Time.fixedDeltaTime;
     }
