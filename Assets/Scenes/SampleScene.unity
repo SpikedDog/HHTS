@@ -457,8 +457,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 1
   m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
+    spring: 3500
+    damper: 450
     targetPosition: 0.5
   m_SuspensionDistance: 0.42
   m_ForceAppPointDistance: 0
@@ -513,8 +513,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 1
   m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
+    spring: 3500
+    damper: 450
     targetPosition: 0.5
   m_SuspensionDistance: 0.42
   m_ForceAppPointDistance: 0
@@ -633,7 +633,7 @@ MonoBehaviour:
     RRWheel: {fileID: 1377904672568220856}
   gasInput: 0
   steeringInput: 0
-  motorPower: 5000
+  motorPower: 700
 --- !u!54 &2069426717
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -642,7 +642,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069426715}
   serializedVersion: 4
-  m_Mass: 500
+  m_Mass: 150
   m_Drag: 1
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -741,7 +741,7 @@ Transform:
   m_GameObject: {fileID: 2069426715}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2515702, y: 1.9512932, z: 5.76}
+  m_LocalPosition: {x: 2.2515702, y: 3.26, z: 5.76}
   m_LocalScale: {x: 2.3635, y: 1, z: 5.0998}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -791,8 +791,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 1
   m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
+    spring: 3500
+    damper: 450
     targetPosition: 0.5
   m_SuspensionDistance: 0.42
   m_ForceAppPointDistance: 0

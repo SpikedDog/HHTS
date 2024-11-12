@@ -40,9 +40,9 @@ public class CarController : MonoBehaviour
     //The engine and the application of power
     void ApplyMotor()
     {
-        colliders.FWheel.motorTorque = motorPower * gasInput * Time.fixedDeltaTime;
-        colliders.RLWheel.motorTorque = motorPower * gasInput * Time.fixedDeltaTime;
-        colliders.RRWheel.motorTorque = motorPower * gasInput * Time.fixedDeltaTime;
+        colliders.FWheel.motorTorque = motorPower * gasInput;
+        colliders.RLWheel.motorTorque = motorPower * gasInput;
+        colliders.RRWheel.motorTorque = motorPower * gasInput;
     }
 
     //Constant updater for wheels
