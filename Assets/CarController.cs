@@ -4,24 +4,32 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
+    private Rigidbody rb;
     public WheelColliders colliders;
     public WheelMeshes wheelMeshes;
     public float gasInput;
+    public float brakeInput;
     public float steeringInput;
 
     public float motorPower;
+    public float brakePower;
+    private float slipAngle;
+    private float speed;
+    public AnimationCurve steeringCurve;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = gameObject.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        speed = rb.velocity.magnitude;
         CheckInput();
-        
+        ApplySteering();
+        ApplyBrake();
         ApplyWheel();
     }
 
@@ -33,8 +41,33 @@ public class CarController : MonoBehaviour
     //Checking the inputs <--- MIGHT CHANGE
     void CheckInput()
     {
+<<<<<<< Updated upstream
         gasInput = Input.GetAxis("Vertical");
         steeringInput = Input.GetAxis("Horizontal");
+=======
+        gasInput = Input.GetAxisRaw("Vertical");
+        steeringInput = Input.GetAxisRaw("Horizontal");
+        slipAngle = Vector3.Angle(transform.forward, rb.velocity - transform.forward);
+        if (slipAngle < 120f)
+        {
+            if (gasInput < 0)
+            {
+                brakeInput = Mathf.Abs(gasInput);
+                gasInput = 0;
+            }
+        }
+        else
+        {
+            brakeInput = 0;
+        }
+    }
+
+    void ApplyBrake()
+    {
+        colliders.FWheel.brakeTorque = brakeInput * brakePower * 0.7f;
+        colliders.RLWheel.brakeTorque = brakeInput * brakePower * 0.3f;
+        colliders.RRWheel.brakeTorque = brakeInput * brakePower * 0.3f;
+>>>>>>> Stashed changes
     }
 
     //The engine and the application of power
@@ -42,6 +75,12 @@ public class CarController : MonoBehaviour
     {
         colliders.RLWheel.motorTorque = motorPower * gasInput * Time.fixedDeltaTime;
         colliders.RRWheel.motorTorque = motorPower * gasInput * Time.fixedDeltaTime;
+    }
+
+    void ApplySteering()
+    {
+        float steeringAngle = steeringInput * steeringCurve.Evaluate(speed);
+        colliders.FWheel.steerAngle = steeringAngle;
     }
 
     //Constant updater for wheels
