@@ -632,8 +632,34 @@ MonoBehaviour:
     RLWheel: {fileID: 4329430057662479386}
     RRWheel: {fileID: 1377904672568220856}
   gasInput: 0
+  brakeInput: 0
   steeringInput: 0
   motorPower: 700
+  brakePower: 1500
+  steeringCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 59.798065
+      inSlope: -0.4900755
+      outSlope: -0.4900755
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 90.88121
+      value: 15.259411
+      inSlope: 0.08130702
+      outSlope: 0.08130702
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.24166667
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!54 &2069426717
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1202,8 +1228,16 @@ MonoBehaviour:
     RLWheel: {fileID: 4329430057662479386}
     RRWheel: {fileID: 1377904672568220856}
   gasInput: 0
+  brakeInput: 0
   steeringInput: 0
   motorPower: 1000
+  brakePower: 0
+  steeringCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!54 &8674487198458518310
 Rigidbody:
   m_ObjectHideFlags: 0
