@@ -41,10 +41,10 @@ public class CarController : MonoBehaviour
     //Checking the inputs <--- MIGHT CHANGE
     void CheckInput()
     {
-<<<<<<< Updated upstream
+        // Updated upstream
         gasInput = Input.GetAxis("Vertical");
         steeringInput = Input.GetAxis("Horizontal");
-=======
+
         gasInput = Input.GetAxisRaw("Vertical");
         steeringInput = Input.GetAxisRaw("Horizontal");
         slipAngle = Vector3.Angle(transform.forward, rb.velocity - transform.forward);
@@ -67,7 +67,7 @@ public class CarController : MonoBehaviour
         colliders.FWheel.brakeTorque = brakeInput * brakePower * 0.7f;
         colliders.RLWheel.brakeTorque = brakeInput * brakePower * 0.3f;
         colliders.RRWheel.brakeTorque = brakeInput * brakePower * 0.3f;
->>>>>>> Stashed changes
+
     }
 
     //The engine and the application of power
