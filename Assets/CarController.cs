@@ -68,7 +68,7 @@ public class CarController : MonoBehaviour
     //The engine and the application of power
     void ApplyMotor()
     {
-        colliders.FWheel.motorTorque = motorPower * gasInput;
+        //colliders.FWheel.motorTorque = motorPower * gasInput;
         colliders.RLWheel.motorTorque = motorPower * gasInput;
         colliders.RRWheel.motorTorque = motorPower * gasInput;
     }
@@ -105,12 +105,19 @@ public class CarController : MonoBehaviour
         public WheelCollider RLWheel;
         public WheelCollider RRWheel;
     }
-    
+
     [System.Serializable]
     public class WheelMeshes
     {
         public MeshRenderer FWheel;
         public MeshRenderer RLWheel;
         public MeshRenderer RRWheel;
+    }
+    
+    [System.Serializable]
+    public class Stablisers
+    {
+        public WheelCollider FLStable;
+        public WheelCollider FRStable;
     }
 }
