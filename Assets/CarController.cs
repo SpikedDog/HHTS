@@ -7,6 +7,7 @@ public class CarController : MonoBehaviour
     private Rigidbody rb;
     public WheelColliders colliders;
     public WheelMeshes wheelMeshes;
+    public WheelParticles wheelParticles;
     public float gasInput;
     public float brakeInput;
     public float steeringInput;
@@ -21,6 +22,11 @@ public class CarController : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
+    }
+
+    void InstantiateSmoke()
+    {
+        wheelParticles.FWheel = Instantiate()
     }
 
     // Update is called once per frame
@@ -119,5 +125,13 @@ public class CarController : MonoBehaviour
     {
         public WheelCollider FLStable;
         public WheelCollider FRStable;
+    }
+    
+    [System.Serializable]
+    public class WheelParticles
+    {
+        public ParticleSystem FWheel;
+        public ParticleSystem RLWheel;
+        public ParticleSystem RRWheel;
     }
 }
