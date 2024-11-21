@@ -26,7 +26,7 @@ public class CarController : MonoBehaviour
 
     void InstantiateSmoke()
     {
-        wheelParticles.FWheel = Instantiate()
+        wheelParticles.FWheel = Instantiate();
     }
 
     // Update is called once per frame
