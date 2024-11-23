@@ -11,6 +11,7 @@ public class CarController : MonoBehaviour
     public float gasInput;
     public float brakeInput;
     public float steeringInput;
+    public GameObject smokePrefab;
 
     public float motorPower;
     public float brakePower;
@@ -22,11 +23,17 @@ public class CarController : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
+        InstantiateSmoke();
     }
 
     void InstantiateSmoke()
     {
-        wheelParticles.FWheel = Instantiate();
+        wheelParticles.FWheel = Instantiate(smokePrefab, colliders.FWheel.transform.position - Vector3.up * colliders.FWheel.radius, Quaternion.identity, colliders.FWheel.transform)
+            .GetComponent<ParticleSystem>();
+        wheelParticles.RLWheel = Instantiate(smokePrefab, colliders.RLWheel.transform.position - Vector3.up * colliders.RLWheel.radius, Quaternion.identity, colliders.RLWheel.transform)
+            .GetComponent<ParticleSystem>();
+        wheelParticles.RRWheel = Instantiate(smokePrefab, colliders.RRWheel.transform.position - Vector3.up * colliders.RRWheel.radius, Quaternion.identity, colliders.RRWheel.transform)
+            .GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -37,6 +44,7 @@ public class CarController : MonoBehaviour
         ApplySteering();
         ApplyBrake();
         ApplyWheel();
+        Debug.Log(rb.velocity.magnitude);
     }
 
     private void FixedUpdate()
