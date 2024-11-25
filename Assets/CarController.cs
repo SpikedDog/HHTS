@@ -36,6 +36,46 @@ public class CarController : MonoBehaviour
             .GetComponent<ParticleSystem>();
     }
 
+    void CheckParticles()
+    {
+        WheelHit[] wheelHits = new WheelHit[3];
+        colliders.FWheel.GetGroundHit(out wheelHits[0]);
+        colliders.RLWheel.GetGroundHit(out wheelHits[1]);
+        colliders.RRWheel.GetGroundHit(out wheelHits[2]);
+        float slipAllowance = 0.1f;
+        int index = 0;
+        foreach (WheelHit wheel in wheelHits)
+        {
+            Debug.Log("Check 1");
+            if ((Mathf.Abs(wheel.sidewaysSlip) + Mathf.Abs(wheel.forwardSlip) > slipAllowance))
+            {
+                CheckWheelParticle(index).Play();
+                Debug.Log("Check 2");
+            }
+            else
+            {
+                CheckWheelParticle(index).Stop();
+                Debug.Log("Check 3");
+            }
+            index++;
+        }
+    }
+
+    private ParticleSystem CheckWheelParticle(int index)
+    {
+        Debug.Log("Check 4"); 
+        switch(index)
+        {
+            default:
+                return wheelParticles.FWheel;
+            case 1:
+                return wheelParticles.RLWheel;
+            case 2:
+                return wheelParticles.RRWheel;
+                
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -44,7 +84,8 @@ public class CarController : MonoBehaviour
         ApplySteering();
         ApplyBrake();
         ApplyWheel();
-        Debug.Log(rb.velocity.magnitude);
+        CheckParticles();
+        //Debug.Log(rb.velocity.magnitude);
     }
 
     private void FixedUpdate()
