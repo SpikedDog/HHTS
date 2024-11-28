@@ -50,7 +50,8 @@ public class CarController : MonoBehaviour
             if ((Mathf.Abs(wheel.sidewaysSlip) + Mathf.Abs(wheel.forwardSlip) > slipAllowance))
             {
                 CheckWheelParticle(index).Play();
-                Debug.Log("Check 2");
+                
+                Debug.Log("Check 2: "+ CheckWheelParticle(index)+" " + CheckWheelParticle(index).isEmitting);
             }
             else
             {
