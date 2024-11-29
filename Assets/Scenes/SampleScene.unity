@@ -122,6 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &31893159 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1273915125232972, guid: 73767e07adddc394d82b994801f89bbb, type: 3}
+  m_PrefabInstance: {fileID: 556573157}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &241654542
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,9 +952,9 @@ MonoBehaviour:
   gasInput: 0
   brakeInput: 0
   steeringInput: 0
-  smokePrefab: {fileID: 1273915125232972, guid: 73767e07adddc394d82b994801f89bbb, type: 3}
-  motorPower: 700
-  brakePower: 1500
+  smokePrefab: {fileID: 31893159}
+  motorPower: 500
+  brakePower: 1000
   steeringCurve:
     serializedVersion: 2
     m_Curve:
@@ -1082,7 +1087,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.2515702, y: 3.26, z: 5.76}
-  m_LocalScale: {x: 2.3635, y: 1, z: 5.0998}
+  m_LocalScale: {x: 1.4234179, y: 0.60225, z: 3.0713546}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2029461695}

@@ -42,20 +42,25 @@ public class CarController : MonoBehaviour
         colliders.FWheel.GetGroundHit(out wheelHits[0]);
         colliders.RLWheel.GetGroundHit(out wheelHits[1]);
         colliders.RRWheel.GetGroundHit(out wheelHits[2]);
-        float slipAllowance = 0.1f;
+        float slipAllowance = 0.325f;
         int index = 0;
         foreach (WheelHit wheel in wheelHits)
         {
             Debug.Log("Check 1");
             if ((Mathf.Abs(wheel.sidewaysSlip) + Mathf.Abs(wheel.forwardSlip) > slipAllowance))
             {
-                CheckWheelParticle(index).Play();
-                
+                if (!CheckWheelParticle(index).isPlaying)
+                {
+                    CheckWheelParticle(index).Play();
+                }
                 Debug.Log("Check 2: "+ CheckWheelParticle(index)+" " + CheckWheelParticle(index).isEmitting);
             }
             else
             {
-                CheckWheelParticle(index).Stop();
+                if (CheckWheelParticle(index).isPlaying)
+                {
+                    CheckWheelParticle(index).Stop();
+                }
                 Debug.Log("Check 3");
             }
             index++;
