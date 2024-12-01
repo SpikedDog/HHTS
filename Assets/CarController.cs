@@ -28,11 +28,11 @@ public class CarController : MonoBehaviour
 
     void InstantiateSmoke()
     {
-        wheelParticles.FWheel = Instantiate(smokePrefab, colliders.FWheel.transform.position - Vector3.up * colliders.FWheel.radius, Quaternion.identity, colliders.FWheel.transform)
+        wheelParticles.FWheel = Instantiate(smokePrefab, colliders.FWheel.transform.position - (Vector3.up * 0.6f) * colliders.FWheel.radius, Quaternion.identity, colliders.FWheel.transform)
             .GetComponent<ParticleSystem>();
-        wheelParticles.RLWheel = Instantiate(smokePrefab, colliders.RLWheel.transform.position - Vector3.up * colliders.RLWheel.radius, Quaternion.identity, colliders.RLWheel.transform)
+        wheelParticles.RLWheel = Instantiate(smokePrefab, colliders.RLWheel.transform.position - (Vector3.up * 0.6f) * colliders.RLWheel.radius, Quaternion.identity, colliders.RLWheel.transform)
             .GetComponent<ParticleSystem>();
-        wheelParticles.RRWheel = Instantiate(smokePrefab, colliders.RRWheel.transform.position - Vector3.up * colliders.RRWheel.radius, Quaternion.identity, colliders.RRWheel.transform)
+        wheelParticles.RRWheel = Instantiate(smokePrefab, colliders.RRWheel.transform.position - (Vector3.up * 0.6f) * colliders.RRWheel.radius, Quaternion.identity, colliders.RRWheel.transform)
             .GetComponent<ParticleSystem>();
     }
 
