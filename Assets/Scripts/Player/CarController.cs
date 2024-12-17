@@ -91,7 +91,7 @@ public class CarController : MonoBehaviour
         ApplyBrake();
         ApplyWheel();
         CheckParticles();
-        Debug.Log(rb.velocity.magnitude);
+        //Debug.Log(rb.velocity.magnitude);
     }
 
     private void FixedUpdate()
