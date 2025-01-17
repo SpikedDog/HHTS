@@ -2783,7 +2783,7 @@ GameObject:
   - component: {fileID: 2069426716}
   m_Layer: 0
   m_Name: Test
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2948,14 +2948,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069426715}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0.997045, z: -0, w: 0.07682074}
   m_LocalPosition: {x: 2.2515702, y: 3.26, z: 5.76}
   m_LocalScale: {x: 1.4234179, y: 0.60225, z: 3.0713546}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2029461695}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -171.188, z: 0}
 --- !u!1 &2091135837
 GameObject:
   m_ObjectHideFlags: 0

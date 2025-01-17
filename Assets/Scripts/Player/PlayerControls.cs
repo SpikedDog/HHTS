@@ -53,6 +53,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interaction"",
+                    ""type"": ""Button"",
+                    ""id"": ""b53d3266-000d-410d-bb71-7e421eb412ae"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -275,6 +284,28 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Handbrake"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1e375398-e66c-4def-a712-26f1a8261ac4"",
+                    ""path"": ""<Keyboard>/#(E)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interaction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2ca4779a-e217-4e61-9c23-014e43ee4b61"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interaction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -286,6 +317,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_MovementCommands_Throttle = m_MovementCommands.FindAction("Throttle", throwIfNotFound: true);
         m_MovementCommands_Steering = m_MovementCommands.FindAction("Steering", throwIfNotFound: true);
         m_MovementCommands_Handbrake = m_MovementCommands.FindAction("Handbrake", throwIfNotFound: true);
+        m_MovementCommands_Interaction = m_MovementCommands.FindAction("Interaction", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -350,6 +382,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_MovementCommands_Throttle;
     private readonly InputAction m_MovementCommands_Steering;
     private readonly InputAction m_MovementCommands_Handbrake;
+    private readonly InputAction m_MovementCommands_Interaction;
     public struct MovementCommandsActions
     {
         private @PlayerControls m_Wrapper;
@@ -357,6 +390,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         public InputAction @Throttle => m_Wrapper.m_MovementCommands_Throttle;
         public InputAction @Steering => m_Wrapper.m_MovementCommands_Steering;
         public InputAction @Handbrake => m_Wrapper.m_MovementCommands_Handbrake;
+        public InputAction @Interaction => m_Wrapper.m_MovementCommands_Interaction;
         public InputActionMap Get() { return m_Wrapper.m_MovementCommands; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -375,6 +409,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Handbrake.started += instance.OnHandbrake;
             @Handbrake.performed += instance.OnHandbrake;
             @Handbrake.canceled += instance.OnHandbrake;
+            @Interaction.started += instance.OnInteraction;
+            @Interaction.performed += instance.OnInteraction;
+            @Interaction.canceled += instance.OnInteraction;
         }
 
         private void UnregisterCallbacks(IMovementCommandsActions instance)
@@ -388,6 +425,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Handbrake.started -= instance.OnHandbrake;
             @Handbrake.performed -= instance.OnHandbrake;
             @Handbrake.canceled -= instance.OnHandbrake;
+            @Interaction.started -= instance.OnInteraction;
+            @Interaction.performed -= instance.OnInteraction;
+            @Interaction.canceled -= instance.OnInteraction;
         }
 
         public void RemoveCallbacks(IMovementCommandsActions instance)
@@ -410,5 +450,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         void OnThrottle(InputAction.CallbackContext context);
         void OnSteering(InputAction.CallbackContext context);
         void OnHandbrake(InputAction.CallbackContext context);
+        void OnInteraction(InputAction.CallbackContext context);
     }
 }
