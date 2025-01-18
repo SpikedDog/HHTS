@@ -5,13 +5,21 @@ using UnityEngine;
 
 public class CustomerInteract : MonoBehaviour
 {
-    public Collider interactionCollider;
+    private Collider interactionCollider;
     private PlayerControls inputActions;
     private bool isPlayerInRange = false;
 
     void Awake()
     {
         inputActions = new PlayerControls();
+    }
+
+    private void Update()
+    {
+        if (!interactionCollider)
+        {
+            interactionCollider = transform.Find("Sphere").GetComponentInChildren<Collider>();
+        }
     }
 
     void OnEnable()
@@ -33,12 +41,13 @@ public class CustomerInteract : MonoBehaviour
         if (isPlayerInRange)
         {
             Destroy(gameObject);
+            Debug.Log("OnClick Active");
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && other == interactionCollider)
+        if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;
             Debug.Log("Delete True");
@@ -47,7 +56,7 @@ public class CustomerInteract : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player") && other == interactionCollider)
+        if (other.CompareTag("Player"))
         {
             isPlayerInRange = false;
             Debug.Log("Delete False");
