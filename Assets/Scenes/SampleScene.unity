@@ -1695,9 +1695,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customer: {fileID: 5724514997198465029, guid: ab9bf9f64a0891240b35ae6cc6434e7b, type: 3}
+  spawnPoints:
+  - {fileID: 49804345}
+  - {fileID: 221370402}
+  - {fileID: 1929329848}
   maxSpawnCount: 10
-  spawnRadius: 25
-  minDisatance: 10
 --- !u!1 &1206597030
 GameObject:
   m_ObjectHideFlags: 0
