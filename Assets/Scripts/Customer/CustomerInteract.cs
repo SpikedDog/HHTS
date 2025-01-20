@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CustomerInteract : MonoBehaviour
 {
-    private Collider interactionCollider;
+    [SerializeField] GameObject interactObject;
     private PlayerControls inputActions;
     private bool isPlayerInRange = false;
 
@@ -16,10 +16,6 @@ public class CustomerInteract : MonoBehaviour
 
     private void Update()
     {
-        if (!interactionCollider)
-        {
-            interactionCollider = transform.Find("Sphere").GetComponentInChildren<Collider>();
-        }
     }
 
     void OnEnable()
@@ -40,7 +36,7 @@ public class CustomerInteract : MonoBehaviour
     {
         if (isPlayerInRange)
         {
-            Destroy(gameObject);
+            Destroy(interactObject);
             Debug.Log("OnClick Active");
         }
     }

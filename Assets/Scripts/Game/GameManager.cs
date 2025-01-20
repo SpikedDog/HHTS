@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        UpdateTimerText();
+        //UpdateTimerText();
     }
 
     // Update is called once per frame
@@ -31,26 +31,26 @@ public class GameManager : MonoBehaviour
         if (timeRemaining > 0)
         {
             timeRemaining -= Time.deltaTime;
-            UpdateTimerText();
+            //UpdateTimerText();
         }
-        else
-        {
-            EndGame();
-        }
+        //else
+        //{
+        //    EndGame(); LATER TOO
+        //}
     }
 
-    void UpdateTimerText()
-    {
-        int minutes = Mathf.FloorToInt(timeRemaining / 60);
-        int seconds = Mathf.FloorToInt(timeRemaining % 60);
-        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-    }
+    //void UpdateTimerText() LATER
+    //{
+    //    int minutes = Mathf.FloorToInt(timeRemaining / 60);
+    //    int seconds = Mathf.FloorToInt(timeRemaining % 60);
+    //    timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    //}
 
-    void EndGame()
-    {
-        Debug.Log("Game Over!");
+    //void EndGame()
+    //{
+    //    Debug.Log("Game Over!");
         //SceneManager.LoadScene("GameOverScene"); THIS WILL BE ADDED WHEN SCENE IS MADE
-    }
+    //}
 
     //public GameObject GetDestinationNotInside(Vector3 position, float radius)
     //{

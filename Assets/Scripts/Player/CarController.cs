@@ -46,14 +46,14 @@ public class CarController : MonoBehaviour
         int index = 0;
         foreach (WheelHit wheel in wheelHits)
         {
-            Debug.Log("Check 1");
+            //Debug.Log("Check 1");
             if ((Mathf.Abs(wheel.sidewaysSlip) + Mathf.Abs(wheel.forwardSlip) > slipAllowance))
             {
                 if (!CheckWheelParticle(index).isPlaying)
                 {
                     CheckWheelParticle(index).Play();
                 }
-                Debug.Log("Check 2: "+ CheckWheelParticle(index)+" " + CheckWheelParticle(index).isEmitting);
+                //Debug.Log("Check 2: "+ CheckWheelParticle(index)+" " + CheckWheelParticle(index).isEmitting);
             }
             else
             {
@@ -61,7 +61,7 @@ public class CarController : MonoBehaviour
                 {
                     CheckWheelParticle(index).Stop();
                 }
-                Debug.Log("Check 3");
+                //Debug.Log("Check 3");
             }
             index++;
         }
@@ -69,7 +69,7 @@ public class CarController : MonoBehaviour
 
     private ParticleSystem CheckWheelParticle(int index)
     {
-        Debug.Log("Check 4"); 
+        //Debug.Log("Check 4"); 
         switch(index)
         {
             default:
