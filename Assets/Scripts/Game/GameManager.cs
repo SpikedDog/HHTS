@@ -8,8 +8,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public GameObject[] destinations;
-    public float timeRemaining;
-    public Text timerText;
 
     // Start is called before the first frame update
     void Start()
@@ -28,29 +26,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timeRemaining > 0)
-        {
-            timeRemaining -= Time.deltaTime;
-            //UpdateTimerText();
-        }
-        //else
-        //{
-        //    EndGame(); LATER TOO
-        //}
+        
     }
-
-    //void UpdateTimerText() LATER
-    //{
-    //    int minutes = Mathf.FloorToInt(timeRemaining / 60);
-    //    int seconds = Mathf.FloorToInt(timeRemaining % 60);
-    //    timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-    //}
-
-    //void EndGame()
-    //{
-    //    Debug.Log("Game Over!");
-        //SceneManager.LoadScene("GameOverScene"); THIS WILL BE ADDED WHEN SCENE IS MADE
-    //}
 
     //public GameObject GetDestinationNotInside(Vector3 position, float radius)
     //{
