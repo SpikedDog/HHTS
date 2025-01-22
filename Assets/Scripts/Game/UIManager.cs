@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    private static UIManager instance;
     public Text timerText;
     public Text pointsText;
     public Text objectivesText;
@@ -15,6 +16,14 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         UpdateUI();
     }
 
