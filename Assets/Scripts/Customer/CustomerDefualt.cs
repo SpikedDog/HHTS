@@ -8,9 +8,8 @@ public class CustomerDefault : MonoBehaviour
     public Transform destination;
     public Collider interactionCollider; // Reference to the customer's collider
     private bool isPickedUp = false;
-    private GameObject player;
 
-    public void PickUpCustomer(GameObject player)
+    public void PickUpCustomer()
     {
         if (destination == null)
         {
@@ -21,17 +20,21 @@ public class CustomerDefault : MonoBehaviour
                 return;
             }
         }
-
         isPickedUp = true;
-        this.player = player;
-        transform.SetParent(player.transform);
-        transform.localPosition = Vector3.zero; // Adjust as needed
-
-        // Make the destination visible
-        destination.gameObject.SetActive(true);
-
-        // Update the UI objectives
-        UIManager.instance.SetObjectives("Take customer to the destination: " + destination.name);
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            transform.SetParent(player.transform);
+            transform.localPosition = Vector3.zero;
+            // Make the destination visible
+            destination.gameObject.SetActive(true);
+            // Update the UI objectives
+            UIManager.instance.SetObjectives("Take customer to the destination: " + destination.name);
+        }
+        else
+        {
+            Debug.LogError("Player not found.");
+        }
     }
 
     public void DropOffCustomer()
@@ -44,5 +47,10 @@ public class CustomerDefault : MonoBehaviour
             UIManager.instance.SetObjectives("Bring customer to destination");
             Destroy(gameObject);
         }
+    }
+
+    public void Interact()
+    {
+        PickUpCustomer();
     }
 }

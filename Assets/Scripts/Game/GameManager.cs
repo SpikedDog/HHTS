@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (GameManager.instance == null)
+        {
+            Debug.LogError("GameManager instance is null.");
+        }
     }
 
     void Start()

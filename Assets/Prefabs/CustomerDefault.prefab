@@ -114,6 +114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4286090289802959571}
+  - component: {fileID: 7539290050648680885}
   m_Layer: 0
   m_Name: CustomerDefault
   m_TagString: Customer
@@ -137,6 +138,21 @@ Transform:
   - {fileID: 1035005370162952196}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7539290050648680885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5724514997198465029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff1de0b58564224087c54c3ca5a4069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 50
+  destination: {fileID: 0}
+  interactionCollider: {fileID: 2567285872934302120}
 --- !u!1 &6602861713438131728
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,7 +165,7 @@ GameObject:
   - component: {fileID: 299824205370017621}
   - component: {fileID: 5626399735758742696}
   - component: {fileID: 2567285872934302120}
-  - component: {fileID: 5903104522653571038}
+  - component: {fileID: 1056057324765285326}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Customer
@@ -243,7 +259,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5903104522653571038
+--- !u!114 &1056057324765285326
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -252,12 +268,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6602861713438131728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eff1de0b58564224087c54c3ca5a4069, type: 3}
+  m_Script: {fileID: 11500000, guid: 23908f8742598b54084a8da36d752b6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 50
-  destination: {fileID: 0}
-  interactionCollider: {fileID: 2567285872934302120}
+  interactObject: {fileID: 5724514997198465029}
 --- !u!1 &8693798125400588694
 GameObject:
   m_ObjectHideFlags: 0
