@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8192731015978582541}
   m_Layer: 0
   m_Name: Range
-  m_TagString: Untagged
+  m_TagString: Customer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 4286090289802959571}
   m_Layer: 0
   m_Name: CustomerDefault
-  m_TagString: Untagged
+  m_TagString: Customer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,10 +149,10 @@ GameObject:
   - component: {fileID: 299824205370017621}
   - component: {fileID: 5626399735758742696}
   - component: {fileID: 2567285872934302120}
-  - component: {fileID: 9187043290006121586}
+  - component: {fileID: 5903104522653571038}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Customer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,7 +243,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9187043290006121586
+--- !u!114 &5903104522653571038
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -252,10 +252,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6602861713438131728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23908f8742598b54084a8da36d752b6b, type: 3}
+  m_Script: {fileID: 11500000, guid: eff1de0b58564224087c54c3ca5a4069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactObject: {fileID: 5724514997198465029}
+  points: 50
+  destination: {fileID: 0}
+  interactionCollider: {fileID: 2567285872934302120}
 --- !u!1 &8693798125400588694
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,7 +272,7 @@ GameObject:
   - component: {fileID: 1943733817493639009}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Customer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

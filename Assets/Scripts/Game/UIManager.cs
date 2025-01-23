@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    private static UIManager instance;
+    public static UIManager instance { get; private set; } //This is cool, basically this means the UI instance cant be set by anything else but itself but other scripts can get the values. TLDR: Read only file
     public Text timerText;
     public Text pointsText;
     public Text objectivesText;
@@ -14,16 +14,21 @@ public class UIManager : MonoBehaviour
     private int points = 0;
     private string objectives = "Bring customer to destination";
 
-    void Start()
+    void Awake()
     {
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
+    }
+
+    void Start()
+    {
         UpdateUI();
     }
 

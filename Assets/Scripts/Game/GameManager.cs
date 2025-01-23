@@ -9,44 +9,47 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public GameObject[] destinations;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
-        //UpdateTimerText();
     }
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
+        // Hide all destinations initially
+        foreach (GameObject destination in destinations)
+        {
+            destination.SetActive(false);
+        }
     }
 
-    //public GameObject GetDestinationNotInside(Vector3 position, float radius)
-    //{
-    //    int count = 10;
-    //    GameObject random = destination[Random.Range(0, destination.Length)];
-    //    while (count > 0 && Vector3.Distance(random.transform.position, position) < radius)
-    //    {
-    //        Debug.Log($"Distance from range is {random.transform.position}");
-    //        random = destination[Random.Range(0, destination.Length)];
-    //        count--;
-    //    }
-    //    return random;
-    //}
+    public Transform GetValidDestination(Vector3 customerPosition, float minDistance = 40f)
+    {
+        List<Transform> validDestinations = new List<Transform>();
 
+        foreach (GameObject destination in destinations)
+        {
+            if (Vector3.Distance(customerPosition, destination.transform.position) >= minDistance)
+            {
+                validDestinations.Add(destination.transform);
+            }
+        }
 
+        if (validDestinations.Count == 0)
+        {
+            Debug.LogError("No valid destinations found.");
+            return null;
+        }
 
-    //[System.Serializable]
-    //public class Destinations
-    //{
-    //    public GameObject[] destination;
-    //}
+        int index = Random.Range(0, validDestinations.Count);
+        return validDestinations[index];
+    }
 }

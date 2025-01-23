@@ -5,17 +5,14 @@ using UnityEngine;
 
 public class CustomerInteract : MonoBehaviour
 {
-    [SerializeField] GameObject interactObject;
+    [SerializeField] GameObject interactObject; // Reference to the customer object
     private PlayerControls inputActions;
     private bool isPlayerInRange = false;
+    private CustomerDefault currentCustomer;
 
     void Awake()
     {
         inputActions = new PlayerControls();
-    }
-
-    private void Update()
-    {
     }
 
     void OnEnable()
@@ -34,37 +31,30 @@ public class CustomerInteract : MonoBehaviour
 
     private void OnClick(InputAction.CallbackContext context)
     {
-        if (isPlayerInRange)
+        if (isPlayerInRange && currentCustomer != null)
         {
-            Destroy(interactObject);
-            Debug.Log("OnClick Active");
+            currentCustomer.PickUpCustomer(gameObject);
+            Debug.Log("Customer Picked Up");
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Customer"))
         {
             isPlayerInRange = true;
-            Debug.Log("Delete True");
+            currentCustomer = other.GetComponent<CustomerDefault>();
+            Debug.Log("Customer In Range: " + currentCustomer);
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Customer"))
         {
             isPlayerInRange = false;
-            Debug.Log("Delete False");
+            currentCustomer = null;
+            Debug.Log("Customer Out of Range");
         }
     }
-
-
-    //private void OnTriggerEnter(Collider player)
-    //{
-    //    if (player.CompareTag("Player"))
-    //    {
-
-    //    }
-    //}
 }
