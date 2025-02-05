@@ -6,8 +6,14 @@ public class CustomerDefault : MonoBehaviour
 {
     public int points = 50;
     public Transform destination;
-    public Collider interactionCollider; // Reference to the customer's collider
+    public Collider interactionCollider;
     private bool isPickedUp = false;
+    private ArrowPointer arrowController;
+
+    void Start()
+    {
+        arrowController = FindObjectOfType<ArrowPointer>();
+    }
 
     public void PickUpCustomer()
     {
@@ -26,10 +32,9 @@ public class CustomerDefault : MonoBehaviour
         {
             transform.SetParent(player.transform);
             transform.localPosition = Vector3.zero;
-            // Make the destination visible
             destination.gameObject.SetActive(true);
-            // Update the UI objectives
             UIManager.instance.SetObjectives("Take customer to the destination: " + destination.name);
+            arrowController.SetDestination(destination); // Set the destination on the arrow
         }
         else
         {
@@ -45,6 +50,7 @@ public class CustomerDefault : MonoBehaviour
             transform.SetParent(null);
             UIManager.instance.AddPoints(points);
             UIManager.instance.SetObjectives("Bring customer to destination");
+            arrowController.ClearDestination(); // Clear the destination on the arrow
             Destroy(gameObject);
         }
     }
