@@ -9,6 +9,7 @@ public class CustomerDefault : MonoBehaviour
     public Collider interactionCollider;
     private bool isPickedUp = false;
     private ArrowPointer arrowController;
+    public Renderer sphereRenderer;
 
     void Start()
     {
@@ -34,7 +35,11 @@ public class CustomerDefault : MonoBehaviour
             transform.localPosition = Vector3.zero;
             destination.gameObject.SetActive(true);
             UIManager.instance.SetObjectives("Take customer to the destination: " + destination.name);
-            arrowController.SetDestination(destination); // Set the destination on the arrow
+            arrowController.SetDestination(destination); // Sets the destination on the arrow
+            if (sphereRenderer != null)
+            {
+                sphereRenderer.enabled = false;
+            }
         }
         else
         {
@@ -51,6 +56,14 @@ public class CustomerDefault : MonoBehaviour
             UIManager.instance.AddPoints(points);
             UIManager.instance.SetObjectives("Bring customer to destination");
             arrowController.ClearDestination(); // Clear the destination on the arrow
+            if (sphereRenderer != null) //Customer Sphere disappears when picked up
+            {
+                sphereRenderer.enabled = true;
+            }
+            if (destination != null)
+            {
+                destination.gameObject.SetActive(false);
+            }
             Destroy(gameObject);
         }
     }

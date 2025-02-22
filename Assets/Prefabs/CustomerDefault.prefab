@@ -153,6 +153,7 @@ MonoBehaviour:
   points: 50
   destination: {fileID: 0}
   interactionCollider: {fileID: 2567285872934302120}
+  sphereRenderer: {fileID: 5626399735758742696}
 --- !u!1 &6602861713438131728
 GameObject:
   m_ObjectHideFlags: 0

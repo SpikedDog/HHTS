@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     public Text objectivesText;
     public float timeRemaining = 180;
     private int points = 0;
-    private string objectives = "Bring customer to destination";
+    private string objectives = "Pick up CUSTOMERS to make BUXS!";
 
     void Awake()
     {
@@ -57,7 +57,7 @@ public class UIManager : MonoBehaviour
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
         // Update Points
-        pointsText.text = "Points: " + points.ToString();
+        pointsText.text = "BUXS: " + points.ToString();
 
         // Update Objectives
         objectivesText.text = "Objectives: " + objectives;
