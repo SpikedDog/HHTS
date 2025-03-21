@@ -28,8 +28,10 @@ public class CarController : MonoBehaviour
 
     void InstantiateSmoke()
     {
-        wheelParticles.FWheel = Instantiate(smokePrefab, colliders.FWheel.transform.position - (Vector3.up * 0.6f) * colliders.FWheel.radius, Quaternion.identity, colliders.FWheel.transform)
+        wheelParticles.FRWheel = Instantiate(smokePrefab, colliders.FRWheel.transform.position - (Vector3.up * 0.6f) * colliders.FRWheel.radius, Quaternion.identity, colliders.FRWheel.transform)
             .GetComponent<ParticleSystem>();
+        wheelParticles.FLWheel = Instantiate(smokePrefab, colliders.FLWheel.transform.position - (Vector3.up * 0.6f) * colliders.FLWheel.radius, Quaternion.identity, colliders.FLWheel.transform)
+    .GetComponent<ParticleSystem>();
         wheelParticles.RLWheel = Instantiate(smokePrefab, colliders.RLWheel.transform.position - (Vector3.up * 0.6f) * colliders.RLWheel.radius, Quaternion.identity, colliders.RLWheel.transform)
             .GetComponent<ParticleSystem>();
         wheelParticles.RRWheel = Instantiate(smokePrefab, colliders.RRWheel.transform.position - (Vector3.up * 0.6f) * colliders.RRWheel.radius, Quaternion.identity, colliders.RRWheel.transform)
@@ -38,10 +40,11 @@ public class CarController : MonoBehaviour
 
     void CheckParticles()
     {
-        WheelHit[] wheelHits = new WheelHit[3];
-        colliders.FWheel.GetGroundHit(out wheelHits[0]);
-        colliders.RLWheel.GetGroundHit(out wheelHits[1]);
-        colliders.RRWheel.GetGroundHit(out wheelHits[2]);
+        WheelHit[] wheelHits = new WheelHit[4];
+        colliders.FRWheel.GetGroundHit(out wheelHits[0]);
+        colliders.FLWheel.GetGroundHit(out wheelHits[1]);
+        colliders.RLWheel.GetGroundHit(out wheelHits[2]);
+        colliders.RRWheel.GetGroundHit(out wheelHits[3]);
         float slipAllowance = 0.325f;
         int index = 0;
         foreach (WheelHit wheel in wheelHits)
@@ -73,10 +76,12 @@ public class CarController : MonoBehaviour
         switch(index)
         {
             default:
-                return wheelParticles.FWheel;
+                return wheelParticles.FRWheel;
             case 1:
-                return wheelParticles.RLWheel;
+                return wheelParticles.FLWheel;
             case 2:
+                return wheelParticles.RLWheel;
+            case 3:
                 return wheelParticles.RRWheel;
                 
         }
@@ -121,9 +126,10 @@ public class CarController : MonoBehaviour
 
     void ApplyBrake()
     {
-        colliders.FWheel.brakeTorque = brakeInput * brakePower * 0.7f;
+        colliders.FRWheel.brakeTorque = brakeInput * brakePower * 0.5f;
+        colliders.FLWheel.brakeTorque = brakeInput * brakePower * 0.5f;
         colliders.RLWheel.brakeTorque = brakeInput * brakePower * 0.3f;
-        colliders.RRWheel.brakeTorque = brakeInput * brakePower *0.3f;
+        colliders.RRWheel.brakeTorque = brakeInput * brakePower * 0.3f;
     }
 
     //The engine and the application of power
@@ -137,13 +143,15 @@ public class CarController : MonoBehaviour
     void ApplySteering()
     {
         float steeringAngle = steeringInput * steeringCurve.Evaluate(speed);
-        colliders.FWheel.steerAngle = steeringAngle;
+        colliders.FLWheel.steerAngle = steeringAngle;
+        colliders.FRWheel.steerAngle = steeringAngle;
     }
 
     //Constant updater for wheels
     private void ApplyWheel()
     {
-        UpdateWheel(colliders.FWheel, wheelMeshes.FWheel);
+        UpdateWheel(colliders.FRWheel, wheelMeshes.FRWheel);
+        UpdateWheel(colliders.FLWheel, wheelMeshes.FLWheel);
         UpdateWheel(colliders.RLWheel, wheelMeshes.RLWheel);
         UpdateWheel(colliders.RRWheel, wheelMeshes.RRWheel);
     }
@@ -162,7 +170,8 @@ public class CarController : MonoBehaviour
     [System.Serializable]
     public class WheelColliders
     {
-        public WheelCollider FWheel;
+        public WheelCollider FRWheel;
+        public WheelCollider FLWheel;
         public WheelCollider RLWheel;
         public WheelCollider RRWheel;
     }
@@ -170,22 +179,17 @@ public class CarController : MonoBehaviour
     [System.Serializable]
     public class WheelMeshes
     {
-        public MeshRenderer FWheel;
+        public MeshRenderer FRWheel;
+        public MeshRenderer FLWheel;
         public MeshRenderer RLWheel;
         public MeshRenderer RRWheel;
     }
     
     [System.Serializable]
-    public class Stablisers
-    {
-        public WheelCollider FLStable;
-        public WheelCollider FRStable;
-    }
-    
-    [System.Serializable]
     public class WheelParticles
     {
-        public ParticleSystem FWheel;
+        public ParticleSystem FRWheel;
+        public ParticleSystem FLWheel;
         public ParticleSystem RLWheel;
         public ParticleSystem RRWheel;
     }
