@@ -151,9 +151,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 50
-  destination: {fileID: 0}
+  currentDestination: {fileID: 0}
+  scenicRoute: {fileID: 0}
   interactionCollider: {fileID: 2567285872934302120}
   sphereRenderer: {fileID: 5626399735758742696}
+  destinations:
+  - {fileID: 0}
 --- !u!1 &6602861713438131728
 GameObject:
   m_ObjectHideFlags: 0

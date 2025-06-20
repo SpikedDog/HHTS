@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public GameObject[] destinations;
+    private List<Transform> validDestinations;
+    private int index;
 
     void Awake()
     {
@@ -37,7 +39,7 @@ public class GameManager : MonoBehaviour
 
     public Transform GetValidDestination(Vector3 customerPosition, float minDistance = 40f)
     {
-        List<Transform> validDestinations = new List<Transform>();
+        validDestinations = new List<Transform>();
 
         foreach (GameObject destination in destinations)
         {
@@ -53,7 +55,18 @@ public class GameManager : MonoBehaviour
             return null;
         }
 
-        int index = Random.Range(0, validDestinations.Count);
+        index = Random.Range(0, validDestinations.Count);
         return validDestinations[index];
+    }
+
+    public Transform GetValidScenic(Vector3 position)
+    {
+        validDestinations.Remove(validDestinations[index]);
+        int scenicIndex = Random.Range(0, validDestinations.Count);
+        //foreach(var x in validDestinations)
+        //{
+        //    Debug.Log($"Scenic: {x}");
+        //}
+        return validDestinations[scenicIndex];
     }
 }

@@ -5,7 +5,8 @@ using UnityEngine;
 public class CustomerDefault : MonoBehaviour
 {
     public int points = 50;
-    public Transform destination;
+    public Transform currentDestination;
+    public Transform scenicRoute;
     public Collider interactionCollider;
     private bool isPickedUp = false;
     private ArrowPointer arrowController;
@@ -18,10 +19,10 @@ public class CustomerDefault : MonoBehaviour
 
     public void PickUpCustomer()
     {
-        if (destination == null)
+        if (currentDestination == null)
         {
-            destination = GameManager.instance.GetValidDestination(transform.position);
-            if (destination == null)
+            currentDestination = GameManager.instance.GetValidDestination(transform.position);
+            if (currentDestination == null)
             {
                 Debug.LogError("No valid destinations available.");
                 return;
@@ -33,9 +34,9 @@ public class CustomerDefault : MonoBehaviour
         {
             transform.SetParent(player.transform);
             transform.localPosition = Vector3.zero;
-            destination.gameObject.SetActive(true);
-            UIManager.instance.SetObjectives("Take customer to the destination: " + destination.name);
-            arrowController.SetDestination(destination); // Sets the destination on the arrow
+            currentDestination.gameObject.SetActive(true);
+            UIManager.instance.SetObjectives("Take customer to the destination: " + currentDestination.name);
+            arrowController.SetDestination(currentDestination); // Sets the destination on the arrow
             if (sphereRenderer != null)
             {
                 sphereRenderer.enabled = false;
@@ -60,9 +61,9 @@ public class CustomerDefault : MonoBehaviour
             {
                 sphereRenderer.enabled = true;
             }
-            if (destination != null)
+            if (currentDestination != null)
             {
-                destination.gameObject.SetActive(false);
+                currentDestination.gameObject.SetActive(false);
             }
             Destroy(gameObject);
         }
@@ -71,5 +72,41 @@ public class CustomerDefault : MonoBehaviour
     public void Interact()
     {
         PickUpCustomer();
+        SetTipObjective();
     }
+
+    public void SetTipObjective()
+    {
+        int objectiveType = 1;//Random.Range(1, 4);
+        switch (objectiveType)
+        {
+            case 1:
+                {
+                    //Scenic
+                    scenicRoute = GameManager.instance.GetValidScenic(transform.position);
+                    Debug.Log($"Destination: {currentDestination.gameObject}");
+                    Debug.Log($"Scenic: {scenicRoute.gameObject}");
+                    scenicRoute.gameObject.SetActive(true);
+                    scenicRoute.gameObject.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", Color.blue);
+                    break;
+                }
+            case 2:
+                {
+                    //Speed
+                    break;
+                }
+            case 3:
+                {
+                    //Clean
+                    break;
+                }
+            case 4:
+                {
+                    //Dirty
+                    break;
+                }
+        }
+
+    }
+   
 }
