@@ -20,7 +20,6 @@ public class GoofyNewControls : MonoBehaviour
     public float gasInput;
     public float brakeInput;
     public float steeringInput;
-    private float slipAngle;
 
     // Settings
     [SerializeField] private float motorForce, breakForce, maxSteerAngle;
@@ -63,14 +62,10 @@ public class GoofyNewControls : MonoBehaviour
         {
             gasInput = Input.GetAxisRaw("Vertical");
             steeringInput = Input.GetAxisRaw("Horizontal");
-            slipAngle = Vector3.Angle(transform.forward, rb.velocity - transform.forward);
-            if (slipAngle < 120f)
+            if (gasInput < 0)
             {
-                if (gasInput < 0)
-                {
-                    brakeInput = Mathf.Abs(gasInput);
-                    gasInput = 0;
-                }
+                brakeInput = Mathf.Abs(gasInput);
+                //gasInput = 0;
             }
             else
             {

@@ -23,6 +23,7 @@ public class CameraController : MonoBehaviour
             player.position + player.transform.TransformVector(offset)
             + playerForward * (-5f),
             speed * Time.deltaTime);
-        transform.LookAt(player);
+        Vector3 lookAtTarget = player.position + new Vector3(0f, 1.35f, 0f);
+        transform.LookAt(lookAtTarget);
     }
 }
