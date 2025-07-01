@@ -126,10 +126,10 @@ public class CarController : MonoBehaviour
 
     void ApplyBrake()
     {
-        colliders.FRWheel.brakeTorque = brakeInput * brakePower * 0.5f;
-        colliders.FLWheel.brakeTorque = brakeInput * brakePower * 0.5f;
-        colliders.RLWheel.brakeTorque = brakeInput * brakePower * 0.3f;
-        colliders.RRWheel.brakeTorque = brakeInput * brakePower * 0.3f;
+        colliders.FRWheel.brakeTorque = /*brakeInput **/ brakePower; /** 0.5f;*/
+        colliders.FLWheel.brakeTorque = /*brakeInput **/ brakePower; /** 0.5f;*/
+        colliders.RLWheel.brakeTorque = /*brakeInput **/ brakePower; /** 0.3f;*/
+        colliders.RRWheel.brakeTorque = /*brakeInput **/ brakePower; /** 0.3f;*/
     }
 
     //The engine and the application of power
