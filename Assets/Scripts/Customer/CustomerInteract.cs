@@ -32,15 +32,17 @@ public class CustomerInteract : MonoBehaviour
 
     private void OnClick(InputAction.CallbackContext context)
     {
+        Debug.Log("Temp1");
         if (isPlayerInRange && customerDefault != null)
         {
-            customerDefault.Interact();
             Debug.Log("OnClick Active");
+            customerDefault.Interact();
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Temp2");
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;

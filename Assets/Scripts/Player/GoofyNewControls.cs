@@ -59,7 +59,7 @@ public class GoofyNewControls : MonoBehaviour
 
     private void GetInput()
     {
-        {
+            isBreaking = Input.GetKeyDown(KeyCode.Space);
             gasInput = Input.GetAxisRaw("Vertical");
             steeringInput = Input.GetAxisRaw("Horizontal");
             if (gasInput < 0)
@@ -71,7 +71,6 @@ public class GoofyNewControls : MonoBehaviour
             {
                 brakeInput = 0;
             }
-        }
     }
 
     private void HandleMotor()
