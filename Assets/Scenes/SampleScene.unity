@@ -10803,7 +10803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1858663029}
   offset: {x: 0, y: 2, z: 0}
-  speed: 2
+  speed: 3
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21694,7 +21694,7 @@ MonoBehaviour:
   brakeInput: 0
   steeringInput: 0
   motorForce: 1000
-  breakForce: 30000
+  breakForce: 100000
   maxSteerAngle: 30
   wheelFL: {fileID: 440079288}
   wheelFR: {fileID: 868822241}
@@ -24969,7 +24969,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7495443279060062592, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_Mass
-      value: 1300
+      value: 1700
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495443279060062592, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7495443279060062592, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_Interpolate
