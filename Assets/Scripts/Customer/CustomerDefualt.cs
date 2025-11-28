@@ -72,41 +72,41 @@ public class CustomerDefault : MonoBehaviour
     public void Interact()
     {
         PickUpCustomer();
-        SetTipObjective();
+        //SetTipObjective();
     }
 
-    public void SetTipObjective()
-    {
-        int objectiveType = 1;//Random.Range(1, 4);
-        switch (objectiveType)
-        {
-            case 1:
-                {
-                    //Scenic
-                    scenicRoute = GameManager.instance.GetValidScenic(transform.position);
-                    Debug.Log($"Destination: {currentDestination.gameObject}");
-                    Debug.Log($"Scenic: {scenicRoute.gameObject}");
-                    scenicRoute.gameObject.SetActive(true);
-                    scenicRoute.gameObject.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", Color.blue);
-                    break;
-                }
-            case 2:
-                {
-                    //Speed
-                    break;
-                }
-            case 3:
-                {
-                    //Clean
-                    break;
-                }
-            case 4:
-                {
-                    //Dirty
-                    break;
-                }
-        }
+    //public void SetTipObjective()
+    //{
+    //    int objectiveType = 1;//Random.Range(1, 4);
+    //    switch (objectiveType)
+    //    {
+    //        case 1:
+    //            {
+    //                //Scenic
+    //                scenicRoute = GameManager.instance.GetValidScenic(transform.position);
+    //                Debug.Log($"Destination: {currentDestination.gameObject}");
+    //                Debug.Log($"Scenic: {scenicRoute.gameObject}");
+    //                scenicRoute.gameObject.SetActive(true);
+    //                scenicRoute.gameObject.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", Color.blue);
+    //                break;
+    //            }
+    //        case 2:
+    //            {
+    //                //Speed
+    //                break;
+    //            }
+    //        case 3:
+    //            {
+    //                //Clean
+    //                break;
+    //            }
+    //        case 4:
+    //            {
+    //                //Dirty
+    //                break;
+    //            }
+    //    }
 
-    }
+    //}
    
 }
