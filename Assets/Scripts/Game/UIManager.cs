@@ -4,6 +4,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Scripting.APIUpdating;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
@@ -15,6 +16,7 @@ public class UIManager : MonoBehaviour
     public float timeRemaining = 180;
     [SerializeField]private int points = 0;
     private string objectives = "Pick up CUSTOMERS to make BUXS!";
+    private GameObject InGameUI;
 
 
 
@@ -46,11 +48,12 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         UpdateUI();
+        InGameUI = GameObject.Find("InGameUI");
     }
 
     void Update()
     {
-        if (timeRemaining > 0)
+        if (timeRemaining >= 0)
         {
             timeRemaining -= Time.deltaTime;
             UpdateUI();
@@ -93,6 +96,7 @@ public class UIManager : MonoBehaviour
         Debug.Log("Game Over!");
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = enabled;
+        InGameUI.SetActive(false);
         //SceneManager.LoadScene("GameOverScene");
     }
 
