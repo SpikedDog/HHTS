@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
     [SerializeField]private int points = 0;
     private string objectives = "Pick up CUSTOMERS to make BUXS!";
     private GameObject InGameUI;
+    private GameObject nameInput;
 
 
 
@@ -49,6 +50,10 @@ public class UIManager : MonoBehaviour
     {
         UpdateUI();
         InGameUI = GameObject.Find("InGameUI");
+        nameInput = GameObject.Find("NameInputField");
+        nameInput.SetActive(false);
+        Cursor.visible = enabled;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     void Update()
@@ -94,9 +99,10 @@ public class UIManager : MonoBehaviour
     void EndGame()
     {
         Debug.Log("Game Over!");
-        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = enabled;
         InGameUI.SetActive(false);
+        nameInput.SetActive(true);
         //SceneManager.LoadScene("GameOverScene");
     }
 
