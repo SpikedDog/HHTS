@@ -392,10 +392,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.9686275, g: 0.9960785, b: 0, a: 1}
+    m_NormalColor: {r: 0.97131145, g: 1, b: 0, a: 1}
     m_HighlightedColor: {r: 0.8584906, g: 0.80709064, b: 0.0040494935, a: 1}
     m_PressedColor: {r: 0.6603774, g: 0.6012731, b: 0, a: 1}
-    m_SelectedColor: {r: 0.8588236, g: 0.8078432, b: 0.003921569, a: 1}
+    m_SelectedColor: {r: 0.9686275, g: 0.9960785, b: 0, a: 1}
     m_DisabledColor: {r: 0.20784315, g: 0.20784315, b: 0.20784315, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -414,7 +414,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 376097144}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1597214013}
+        m_TargetAssemblyTypeName: MainMenuUIManager, Assembly-CSharp
+        m_MethodName: OnPlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &376097144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1238,7 +1250,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.9686275, g: 0.9960785, b: 0, a: 1}
+    m_NormalColor: {r: 0.97244096, g: 1, b: 0, a: 1}
     m_HighlightedColor: {r: 0.8584906, g: 0.80709064, b: 0.0040494935, a: 1}
     m_PressedColor: {r: 0.6603774, g: 0.6012731, b: 0, a: 1}
     m_SelectedColor: {r: 0.8588236, g: 0.8078432, b: 0.003921569, a: 1}
@@ -1260,7 +1272,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1208832834}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1597214013}
+        m_TargetAssemblyTypeName: MainMenuUIManager, Assembly-CSharp
+        m_MethodName: OnQuitButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1208832834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1359,7 +1383,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.9686275, g: 0.9960785, b: 0, a: 1}
+    m_NormalColor: {r: 0.97244096, g: 1, b: 0, a: 1}
     m_HighlightedColor: {r: 0.8584906, g: 0.80709064, b: 0.0040494935, a: 1}
     m_PressedColor: {r: 0.6603774, g: 0.6012731, b: 0, a: 1}
     m_SelectedColor: {r: 0.8588236, g: 0.8078432, b: 0.003921569, a: 1}
@@ -1433,6 +1457,7 @@ GameObject:
   - component: {fileID: 1597214009}
   - component: {fileID: 1597214008}
   - component: {fileID: 1597214012}
+  - component: {fileID: 1597214013}
   m_Layer: 5
   m_Name: TitleScreen
   m_TagString: Untagged
@@ -1554,6 +1579,18 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1597214013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597214007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac77f04ca64b0247bb28095e74ea50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1627117645
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,7 +1651,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.9686275, g: 0.9960785, b: 0, a: 1}
+    m_NormalColor: {r: 0.97244096, g: 1, b: 0, a: 1}
     m_HighlightedColor: {r: 0.8584906, g: 0.80709064, b: 0.0040494935, a: 1}
     m_PressedColor: {r: 0.6603774, g: 0.6012731, b: 0, a: 1}
     m_SelectedColor: {r: 0.8588236, g: 0.8078432, b: 0.003921569, a: 1}
@@ -1906,7 +1943,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1915,7 +1952,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
