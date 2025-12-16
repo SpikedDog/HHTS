@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static Cinemachine.DocumentationSortingAttribute;
 
-public class MainMenuUIManager : MonoBehaviour
+public class TitleScreenUI : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Main Menu Toggles
     public void OnPlayButton()
     {
         SceneManager.LoadScene("MainGameLevel");
     }
 
-    // Update is called once per frame
     public void OnQuitButton()
     {
         Application.Quit();
