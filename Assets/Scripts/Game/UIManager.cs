@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour
     private string objectives = "Pick up CUSTOMERS to make BUXS!";
     private GameObject InGameUI;
     private GameObject nameInput;
+    public bool isGameOver = false;
 
 
 
@@ -96,8 +97,9 @@ public class UIManager : MonoBehaviour
         UpdateUI();
     }
 
-    void EndGame()
+    public void EndGame()
     {
+        isGameOver = true;
         Debug.Log("Game Over!");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = enabled;

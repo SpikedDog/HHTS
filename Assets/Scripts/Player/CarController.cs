@@ -19,6 +19,8 @@ public class CarController : MonoBehaviour
     private float speed;
     public AnimationCurve steeringCurve;
 
+    public UIManager UIManagerInstance;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -107,20 +109,23 @@ public class CarController : MonoBehaviour
     //Checking the inputs <--- MIGHT CHANGE
     void CheckInput()
     {
-        gasInput = Input.GetAxisRaw("Vertical");
-        steeringInput = Input.GetAxisRaw("Horizontal");
-        slipAngle = Vector3.Angle(transform.forward, rb.velocity - transform.forward);
-        if (slipAngle < 120f)
+        if (UIManagerInstance.isGameOver == true)
         {
-            if (gasInput < 0)
+            gasInput = Input.GetAxisRaw("Vertical");
+            steeringInput = Input.GetAxisRaw("Horizontal");
+            slipAngle = Vector3.Angle(transform.forward, rb.velocity - transform.forward);
+            if (slipAngle < 120f)
             {
-                brakeInput = Mathf.Abs(gasInput);
-                gasInput = 0;
+                if (gasInput < 0)
+                {
+                    brakeInput = Mathf.Abs(gasInput);
+                    gasInput = 0;
+                }
             }
-        }
-        else
-        {
-            brakeInput = 0;
+            else
+            {
+                brakeInput = 0;
+            }
         }
     }
 
