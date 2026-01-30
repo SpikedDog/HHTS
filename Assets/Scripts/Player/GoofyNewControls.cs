@@ -45,16 +45,21 @@ public class GoofyNewControls : MonoBehaviour
         curSteerAng *= Input.GetAxis("Horizontal");
         wheelFL.steerAngle = curSteerAng;
         wheelFR.steerAngle = curSteerAng;
-        if (Input.GetButton("Vertical") == false)
-        {
-            wheelRL.brakeTorque = decelSpeed;
-            wheelRR.brakeTorque = decelSpeed;
-        }
-        else
-        {
-            wheelRL.brakeTorque = 0;
-            wheelRR.brakeTorque = 0;
-        }
+
+        wheelRL.brakeTorque = brakeInput * breakForce;
+        wheelRR.brakeTorque = brakeInput * breakForce;
+
+        //if (Input.GetButton("Vertical") == false)
+        //{
+        //    wheelRL.brakeTorque = decelSpeed;
+        //    wheelRR.brakeTorque = decelSpeed;
+        //}
+        //else
+        //{
+        //    wheelRL.brakeTorque = 0;
+        //    wheelRR.brakeTorque = 0;
+        //}
+        Debug.Log($"Motor torque L {wheelRL.rotationSpeed} R {wheelRR.rotationSpeed} Brake torque L {wheelRL.brakeTorque} R {wheelRR.brakeTorque}");
     }
 
     private void GetInput()
@@ -86,16 +91,16 @@ public class GoofyNewControls : MonoBehaviour
             wheelRR.motorTorque = 0;
         }
         currentbreakForce = isBreaking ? breakForce : 0f;
-        ApplyBreaking();
+        //ApplyBreaking();
     }
 
-    private void ApplyBreaking()
-    {
-        wheelFR.brakeTorque = currentbreakForce;
-        wheelFL.brakeTorque = currentbreakForce;
-        wheelRL.brakeTorque = currentbreakForce;
-        wheelRR.brakeTorque = currentbreakForce;
-    }
+    //private void ApplyBreaking()
+    //{
+    //    wheelFR.brakeTorque = currentbreakForce;
+    //    wheelFL.brakeTorque = currentbreakForce;
+    //    wheelRL.brakeTorque = currentbreakForce;
+    //    wheelRR.brakeTorque = currentbreakForce;
+    //}
 
     private void UpdateWheels()
     {

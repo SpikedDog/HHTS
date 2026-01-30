@@ -100,7 +100,7 @@ public class UIManager : MonoBehaviour
     public void EndGame()
     {
         isGameOver = true;
-        Debug.Log("Game Over!");
+        //Debug.Log("Game Over!");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = enabled;
         InGameUI.SetActive(false);
