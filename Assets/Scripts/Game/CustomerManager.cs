@@ -27,6 +27,37 @@ public class CustomerManager : MonoBehaviour
             GameObject spawnedPrefab = Instantiate(customer, spawnPoint.position, spawnPoint.rotation);
             spawnedCustomers.Add(spawnedPrefab);
         }
+        Shuffle();
+        TurnOff();
+        TurnOnFirstSix();
+    }
+
+    void Shuffle()
+    {
+        for (int i = 0; i < 100; i++)
+        {
+            int c1 = Random.Range(0, spawnedCustomers.Count);
+            int c2 = Random.Range(0, spawnedCustomers.Count);
+            GameObject temp = spawnedCustomers[c1];
+            spawnedCustomers[c1] = spawnedCustomers[c2];
+            spawnedCustomers[c2] = temp;
+        }
+    }
+
+    void TurnOff()
+    {
+        for (int i = 0; i < spawnedCustomers.Count; i++)
+        {
+            spawnedCustomers[i].SetActive(false);
+        }
+    }
+
+    void TurnOnFirstSix()
+    {
+        for (int i = 0; i < 6; i++)
+        {
+            spawnedCustomers[i].SetActive(true);
+        }
     }
 
     //void SpawnCustomers()

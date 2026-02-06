@@ -49,16 +49,16 @@ public class GoofyNewControls : MonoBehaviour
         wheelRL.brakeTorque = brakeInput * breakForce;
         wheelRR.brakeTorque = brakeInput * breakForce;
 
-        //if (Input.GetButton("Vertical") == false)
-        //{
-        //    wheelRL.brakeTorque = decelSpeed;
-        //    wheelRR.brakeTorque = decelSpeed;
-        //}
-        //else
-        //{
-        //    wheelRL.brakeTorque = 0;
-        //    wheelRR.brakeTorque = 0;
-        //}
+        if (Input.GetButton("Vertical") == false)
+        {
+            wheelRL.brakeTorque = decelSpeed;
+            wheelRR.brakeTorque = decelSpeed;
+        }
+        else
+        {
+            wheelRL.brakeTorque = 0;
+            wheelRR.brakeTorque = 0;
+        }
         Debug.Log($"Motor torque L {wheelRL.rotationSpeed} R {wheelRR.rotationSpeed} Brake torque L {wheelRL.brakeTorque} R {wheelRR.brakeTorque}");
     }
 

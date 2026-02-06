@@ -59,14 +59,14 @@ public class GameManager : MonoBehaviour
         return validDestinations[index];
     }
 
-    public Transform GetValidScenic(Vector3 position)
-    {
-        validDestinations.Remove(validDestinations[index]);
-        int scenicIndex = Random.Range(0, validDestinations.Count);
-        //foreach(var x in validDestinations)
-        //{
-        //    Debug.Log($"Scenic: {x}");
-        //}
-        return validDestinations[scenicIndex];
-    }
+    //public Transform GetValidScenic(Vector3 position)
+    //{
+    //    validDestinations.Remove(validDestinations[index]);
+    //    int scenicIndex = Random.Range(0, validDestinations.Count);
+    //    //foreach(var x in validDestinations)
+    //    //{
+    //    //    Debug.Log($"Scenic: {x}");
+    //    //}
+    //    return validDestinations[scenicIndex];
+    //}
 }
