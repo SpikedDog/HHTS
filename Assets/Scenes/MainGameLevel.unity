@@ -12301,7 +12301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 6588881394108200573}
   offset: {x: 0, y: 2, z: 0}
-  speed: 3
+  speed: 5
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24525,11 +24525,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1dbdad7527a3d42ad88dca24f5e40e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currSpeed: 0
   maxSpeed: 50
   maxSpeedR: 50
   loSpeedAng: 30
   hiSpeedAng: 1
-  currSpeed: 0
   rb: {fileID: 1858663028}
   gasInput: 0
   brakeInput: 0
@@ -27338,11 +27338,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1dbdad7527a3d42ad88dca24f5e40e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currSpeed: 0
   maxSpeed: 50
   maxSpeedR: 50
   loSpeedAng: 30
   hiSpeedAng: 1
-  currSpeed: 0
   rb: {fileID: 0}
   gasInput: 0
   brakeInput: 0
@@ -32074,16 +32074,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1dbdad7527a3d42ad88dca24f5e40e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currSpeed: 0
   maxSpeed: 50
   maxSpeedR: 50
   loSpeedAng: 30
   hiSpeedAng: 1
-  currSpeed: 0
   rb: {fileID: 6588881394108200577}
   gasInput: 0
   brakeInput: 0
   steeringInput: 0
-  motorForce: 1000
+  motorForce: 1500
   breakForce: 100000
   maxSteerAngle: 30
   wheelFL: {fileID: 1962574346}

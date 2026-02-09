@@ -7,15 +7,16 @@ using UnityEngine.EventSystems;
 public class GoofyNewControls : MonoBehaviour
 {
     private float currentbreakForce;
+    public float currSpeed;
     private bool isBreaking;
     public float maxSpeed = 50;
     public float maxSpeedR = 50;
     public float loSpeedAng = 30;
     public float hiSpeedAng = 1;
     private float decelSpeed = 30;
-    public float currSpeed;
     private float topspeed = 150;
     public Rigidbody rb;
+    //float speedMpH;
 
     public float gasInput;
     public float brakeInput;
@@ -38,10 +39,11 @@ public class GoofyNewControls : MonoBehaviour
         HandleMotor();
         UpdateWheels();
         //The Speed Factor
-        float speedF = rb.velocity.magnitude / maxSpeed;
-        currSpeed = 2 * 22 / 7 * wheelRL.radius * wheelRL.rpm * 60 / 1000;
+        float speedF = Vector3.Dot(rb.velocity, transform.forward) * 2.237f;
+        Debug.Log("speedF is " + speedF);
+        //currSpeed = 2 * 22 / 7 * wheelRL.radius * wheelRL.rpm * 60 / 1000;
         currSpeed = MathF.Round(currSpeed);
-        float curSteerAng = Mathf.Lerp(loSpeedAng, hiSpeedAng, speedF);
+        float curSteerAng = Mathf.Lerp(loSpeedAng, hiSpeedAng, currSpeed);
         curSteerAng *= Input.GetAxis("Horizontal");
         wheelFL.steerAngle = curSteerAng;
         wheelFR.steerAngle = curSteerAng;
@@ -59,7 +61,7 @@ public class GoofyNewControls : MonoBehaviour
             wheelRL.brakeTorque = 0;
             wheelRR.brakeTorque = 0;
         }
-        Debug.Log($"Motor torque L {wheelRL.rotationSpeed} R {wheelRR.rotationSpeed} Brake torque L {wheelRL.brakeTorque} R {wheelRR.brakeTorque}");
+        //Debug.Log($"Motor torque L {wheelRL.rotationSpeed} R {wheelRR.rotationSpeed} Brake torque L {wheelRL.brakeTorque} R {wheelRR.brakeTorque}");
     }
 
     private void GetInput()
