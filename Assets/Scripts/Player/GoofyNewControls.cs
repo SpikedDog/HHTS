@@ -9,8 +9,8 @@ public class GoofyNewControls : MonoBehaviour
     private float currentbreakForce;
     public float currSpeed;
     private bool isBreaking;
-    public float maxSpeed = 50;
-    public float maxSpeedR = 50;
+    public float maxSpeed;
+    public float maxSpeedR;
     public float loSpeedAng = 30;
     public float hiSpeedAng = 1;
     private float decelSpeed = 30;
@@ -40,7 +40,7 @@ public class GoofyNewControls : MonoBehaviour
         UpdateWheels();
         //The Speed Factor
         float speedF = Vector3.Dot(rb.velocity, transform.forward) * 2.237f;
-        Debug.Log("speedF is " + speedF);
+        Debug.Log("vel =" + rb.velocity.magnitude);
         //currSpeed = 2 * 22 / 7 * wheelRL.radius * wheelRL.rpm * 60 / 1000;
         currSpeed = MathF.Round(currSpeed);
         float curSteerAng = Mathf.Lerp(loSpeedAng, hiSpeedAng, currSpeed);
@@ -56,11 +56,11 @@ public class GoofyNewControls : MonoBehaviour
             wheelRL.brakeTorque = decelSpeed;
             wheelRR.brakeTorque = decelSpeed;
         }
-        else
-        {
-            wheelRL.brakeTorque = 0;
-            wheelRR.brakeTorque = 0;
-        }
+        //else
+        //{
+        //    wheelRL.brakeTorque = 0;
+        //    wheelRR.brakeTorque = 0;
+        //}
         //Debug.Log($"Motor torque L {wheelRL.rotationSpeed} R {wheelRR.rotationSpeed} Brake torque L {wheelRL.brakeTorque} R {wheelRR.brakeTorque}");
     }
 
@@ -82,7 +82,7 @@ public class GoofyNewControls : MonoBehaviour
 
     private void HandleMotor()
     {
-        if (currSpeed < topspeed && currSpeed > -maxSpeedR)
+        if (returnCurrentMPH() < maxSpeed && returnCurrentMPH() > -maxSpeedR) //(currSpeed < topspeed && currSpeed > -maxSpeedR)
         {
             wheelRL.motorTorque = gasInput * motorForce;
             wheelRR.motorTorque = gasInput * motorForce;
@@ -94,6 +94,15 @@ public class GoofyNewControls : MonoBehaviour
         }
         currentbreakForce = isBreaking ? breakForce : 0f;
         //ApplyBreaking();
+    }
+
+    public float returnCurrentMPH()
+    {
+        if (gasInput < 0)
+        {
+            return -rb.velocity.magnitude;
+        }
+        return rb.velocity.magnitude;
     }
 
     //private void ApplyBreaking()

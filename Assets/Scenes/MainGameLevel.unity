@@ -8026,8 +8026,8 @@ Transform:
   m_GameObject: {fileID: 651545417}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.586, y: 0.614, z: -0.984}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.7019, y: 0.614, z: -0.984}
+  m_LocalScale: {x: 1.1983743, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 269396877}
@@ -8808,8 +8808,8 @@ Transform:
   m_GameObject: {fileID: 716077661}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.583, y: 0.61399984, z: 0.987}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.6989, y: 0.61399984, z: 0.987}
+  m_LocalScale: {x: 1.1983743, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 269396877}
@@ -13446,8 +13446,8 @@ Transform:
   m_GameObject: {fileID: 1059142038}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.583, y: 0.614, z: -0.984}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.6989, y: 0.614, z: -0.984}
+  m_LocalScale: {x: 1.1983743, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 269396877}
@@ -25773,8 +25773,8 @@ Transform:
   m_GameObject: {fileID: 1962574344}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.586, y: 0.61399984, z: 0.987}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.7019, y: 0.61399984, z: 0.987}
+  m_LocalScale: {x: 1.1983743, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 269396877}
@@ -32014,7 +32014,7 @@ Transform:
   m_GameObject: {fileID: 5781416974513843399}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.75, y: 0.51, z: 35.44}
+  m_LocalPosition: {x: -25.3, y: 1.9, z: 16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -32075,15 +32075,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currSpeed: 0
-  maxSpeed: 50
-  maxSpeedR: 50
+  maxSpeed: 33
+  maxSpeedR: 10
   loSpeedAng: 30
   hiSpeedAng: 1
   rb: {fileID: 6588881394108200577}
   gasInput: 0
   brakeInput: 0
   steeringInput: 0
-  motorForce: 1500
+  motorForce: 2500
   breakForce: 100000
   maxSteerAngle: 30
   wheelFL: {fileID: 1962574346}
