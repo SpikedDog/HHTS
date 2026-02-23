@@ -32,8 +32,10 @@ public class CustomerDefault : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
-            transform.SetParent(player.transform);
-            transform.localPosition = Vector3.zero;
+            //transform.SetParent(player.transform);
+            //transform.localPosition = Vector3.zero;
+            
+            gameObject.SetActive(false); //CHANGE WHEN ANIMATION IS MADE!!
             currentDestination.gameObject.SetActive(true);
             UIManager.instance.SetObjectives("Take customer to the destination: " + currentDestination.name);
             arrowController.SetDestination(currentDestination); // Sets the destination on the arrow

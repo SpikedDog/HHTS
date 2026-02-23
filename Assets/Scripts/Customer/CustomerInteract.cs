@@ -9,6 +9,7 @@ public class CustomerInteract : MonoBehaviour
     private PlayerControls inputActions;
     private bool isPlayerInRange = false;
     private CustomerDefault customerDefault;
+    public bool customerActive;
 
     void Awake()
     {
