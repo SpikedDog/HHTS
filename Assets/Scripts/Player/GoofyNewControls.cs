@@ -21,6 +21,7 @@ public class GoofyNewControls : MonoBehaviour
     public float gasInput;
     public float brakeInput;
     public float steeringInput;
+    public float reverseInput;
 
     // Settings
     [SerializeField] private float motorForce, breakForce, maxSteerAngle;
@@ -69,9 +70,11 @@ public class GoofyNewControls : MonoBehaviour
             isBreaking = Input.GetKeyDown(KeyCode.Space);
             gasInput = Input.GetAxisRaw("Vertical");
             steeringInput = Input.GetAxisRaw("Horizontal");
-            if (gasInput < 0)
+            if (currSpeed < 2 && gasInput < 0)
             {
-                brakeInput = Mathf.Abs(gasInput);
+                reverseInput = -brakeInput;
+                
+                //gasInput = Mathf.Abs(brakeInput);
                 //gasInput = 0;
             }
             else
