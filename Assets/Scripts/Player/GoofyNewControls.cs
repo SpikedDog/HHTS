@@ -6,25 +6,25 @@ using UnityEngine.EventSystems;
 
 public class GoofyNewControls : MonoBehaviour
 {
-    private float currentbreakForce;
     public float currSpeed;
-    private bool isBreaking;
     public float maxSpeed;
+    public float maxReverseSpeed = 30;
     public float maxSpeedR;
     public float loSpeedAng = 30;
     public float hiSpeedAng = 1;
-    private float decelSpeed = 30;
+    private float decelSpeed = 0.02f;
     private float topspeed = 150;
     public Rigidbody rb;
     //float speedMpH;
 
-    public float gasInput;
-    public float brakeInput;
-    public float steeringInput;
-    public float reverseInput;
+    private float verticalInput;
+    private float gasInput;
+    private float brakeInput;
+    private float steeringInput;
+    private float reverseInput;
 
     // Settings
-    [SerializeField] private float motorForce, breakForce, maxSteerAngle;
+    [SerializeField] private float motorForce, brakeForce, maxSteerAngle;
 
     // Wheel Colliders
     [SerializeField] private WheelCollider wheelFL, wheelFR;
@@ -39,82 +39,82 @@ public class GoofyNewControls : MonoBehaviour
         GetInput();
         HandleMotor();
         UpdateWheels();
-        //The Speed Factor
-        float speedF = Vector3.Dot(rb.velocity, transform.forward) * 2.237f;
-        Debug.Log("vel =" + rb.velocity.magnitude);
-        //currSpeed = 2 * 22 / 7 * wheelRL.radius * wheelRL.rpm * 60 / 1000;
-        currSpeed = MathF.Round(currSpeed);
-        float curSteerAng = Mathf.Lerp(loSpeedAng, hiSpeedAng, currSpeed);
+        currSpeed = MathF.Round(returnCurrentMPH());
+        float curSteerAng = Mathf.Lerp(loSpeedAng, hiSpeedAng, currSpeed / maxSpeed);
         curSteerAng *= Input.GetAxis("Horizontal");
         wheelFL.steerAngle = curSteerAng;
         wheelFR.steerAngle = curSteerAng;
+    }
 
-        wheelRL.brakeTorque = brakeInput * breakForce;
-        wheelRR.brakeTorque = brakeInput * breakForce;
-
-        if (Input.GetButton("Vertical") == false)
-        {
-            wheelRL.brakeTorque = decelSpeed;
-            wheelRR.brakeTorque = decelSpeed;
-        }
-        //else
-        //{
-        //    wheelRL.brakeTorque = 0;
-        //    wheelRR.brakeTorque = 0;
-        //}
-        //Debug.Log($"Motor torque L {wheelRL.rotationSpeed} R {wheelRR.rotationSpeed} Brake torque L {wheelRL.brakeTorque} R {wheelRR.brakeTorque}");
+    private bool ShouldReverse()
+    {
+        return Vector3.Dot(rb.velocity, rb.transform.forward) < 1;
     }
 
     private void GetInput()
     {
-            isBreaking = Input.GetKeyDown(KeyCode.Space);
-            gasInput = Input.GetAxisRaw("Vertical");
-            steeringInput = Input.GetAxisRaw("Horizontal");
-            if (currSpeed < 2 && gasInput < 0)
+        verticalInput = Input.GetAxisRaw("Vertical");
+        steeringInput = Input.GetAxisRaw("Horizontal");
+        if (verticalInput < 0)
+        {
+            if (ShouldReverse())
             {
-                reverseInput = -brakeInput;
-                
-                //gasInput = Mathf.Abs(brakeInput);
-                //gasInput = 0;
+                // reverse
+                reverseInput = -verticalInput;
+                gasInput = 0;
+                brakeInput = 0;
             }
             else
             {
-                brakeInput = 0;
+                // brake                 
+                brakeInput = -verticalInput;
+                gasInput = 0;
+                reverseInput = 0;
             }
+        }
+        else
+        {
+            gasInput = verticalInput;
+            brakeInput = 0;
+            reverseInput = 0;
+        }
+    }
+
+    private void SetWheels(float motorTorque, float brakeTorque)
+    {
+        wheelRL.motorTorque = motorTorque;
+        wheelRR.motorTorque = motorTorque;
+        wheelFR.brakeTorque = brakeTorque;
+        wheelFL.brakeTorque = brakeTorque;
+        wheelRL.brakeTorque = brakeTorque;
+        wheelRR.brakeTorque = brakeTorque;
     }
 
     private void HandleMotor()
     {
-        if (returnCurrentMPH() < maxSpeed && returnCurrentMPH() > -maxSpeedR) //(currSpeed < topspeed && currSpeed > -maxSpeedR)
+        if (gasInput > 0 && returnCurrentMPH() < maxSpeed)
         {
-            wheelRL.motorTorque = gasInput * motorForce;
-            wheelRR.motorTorque = gasInput * motorForce;
+            SetWheels(gasInput * motorForce, 0);
+        }
+        else if (brakeInput > 0)
+        {
+            SetWheels(0, brakeForce);
+        }
+        else if (reverseInput > 0 && returnCurrentMPH() < maxReverseSpeed)
+        {
+            SetWheels(-reverseInput * motorForce, 0);
         }
         else
         {
-            wheelRL.motorTorque = 0;
-            wheelRR.motorTorque = 0;
+            Debug.Log($"Motor: wheel rpm {wheelRL.rpm} gas {gasInput} brake {brakeInput} reverse {reverseInput}");
+            SetWheels(0, decelSpeed);
         }
-        currentbreakForce = isBreaking ? breakForce : 0f;
-        //ApplyBreaking();
     }
 
     public float returnCurrentMPH()
     {
-        if (gasInput < 0)
-        {
-            return -rb.velocity.magnitude;
-        }
-        return rb.velocity.magnitude;
+        return rb.velocity.magnitude * 2.237f;
     }
-
-    //private void ApplyBreaking()
-    //{
-    //    wheelFR.brakeTorque = currentbreakForce;
-    //    wheelFL.brakeTorque = currentbreakForce;
-    //    wheelRL.brakeTorque = currentbreakForce;
-    //    wheelRR.brakeTorque = currentbreakForce;
-    //}
 
     private void UpdateWheels()
     {

@@ -24527,15 +24527,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currSpeed: 0
   maxSpeed: 50
+  maxReverseSpeed: 30
   maxSpeedR: 50
   loSpeedAng: 30
   hiSpeedAng: 1
   rb: {fileID: 1858663028}
-  gasInput: 0
-  brakeInput: 0
-  steeringInput: 0
   motorForce: 1000
-  breakForce: 100000
+  brakeForce: 0
   maxSteerAngle: 30
   wheelFL: {fileID: 440079288}
   wheelFR: {fileID: 868822241}
@@ -27340,15 +27338,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currSpeed: 0
   maxSpeed: 50
+  maxReverseSpeed: 30
   maxSpeedR: 50
   loSpeedAng: 30
   hiSpeedAng: 1
   rb: {fileID: 0}
-  gasInput: 0
-  brakeInput: 0
-  steeringInput: 0
   motorForce: 1000
-  breakForce: 3000
+  brakeForce: 0
   maxSteerAngle: 30
   wheelFL: {fileID: 0}
   wheelFR: {fileID: 0}
@@ -32075,16 +32071,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currSpeed: 0
-  maxSpeed: 33
+  maxSpeed: 150
+  maxReverseSpeed: 30
   maxSpeedR: 10
-  loSpeedAng: 30
+  loSpeedAng: 20
   hiSpeedAng: 1
   rb: {fileID: 6588881394108200577}
-  gasInput: 0
-  brakeInput: 0
-  steeringInput: 0
   motorForce: 2500
-  breakForce: 100000
+  brakeForce: 2500
   maxSteerAngle: 30
   wheelFL: {fileID: 1962574346}
   wheelFR: {fileID: 716077663}
