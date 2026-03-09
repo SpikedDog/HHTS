@@ -174,6 +174,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (2)
@@ -246,6 +250,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (39)
@@ -337,6 +345,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a486253be99619c438cad5938b2314c2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: a486253be99619c438cad5938b2314c2, type: 3}
       propertyPath: m_Name
       value: road-side-exit (1)
@@ -494,6 +506,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (25)
@@ -566,6 +582,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (25)
@@ -779,6 +799,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (10)
@@ -882,6 +906,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (83)
@@ -973,6 +1001,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ddbb7ae483a7c68478fd90cccb1658d6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: ddbb7ae483a7c68478fd90cccb1658d6, type: 3}
       propertyPath: m_Name
       value: road-curve-pavement (2)
@@ -1122,7 +1154,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 956e30247792d2d47b4deba0ffe47ac3, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1212,6 +1244,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (6)
@@ -1308,7 +1344,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 02221a26b12f8e34ea85a87ebf2b62e6, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1516,6 +1552,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (78)
@@ -1636,7 +1676,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 837ea220cd1721e40905481cf62f8295, type: 3}
+  - {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1726,6 +1766,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (47)
@@ -1829,6 +1873,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (56)
@@ -2152,6 +2200,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (62)
@@ -2274,6 +2326,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a486253be99619c438cad5938b2314c2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: a486253be99619c438cad5938b2314c2, type: 3}
       propertyPath: m_Name
       value: road-side-exit (6)
@@ -2377,6 +2433,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (44)
@@ -2472,6 +2532,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (6)
@@ -2560,7 +2624,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: b0e62be0fe6840c47818193f23ace889, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2713,6 +2777,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (28)
@@ -2773,6 +2841,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ddbb7ae483a7c68478fd90cccb1658d6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: ddbb7ae483a7c68478fd90cccb1658d6, type: 3}
       propertyPath: m_Name
       value: road-curve-pavement (5)
@@ -2864,6 +2936,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 021e3819f505f54428390035632a78c3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 021e3819f505f54428390035632a78c3, type: 3}
       propertyPath: m_Name
       value: road-side-entry (2)
@@ -2963,6 +3039,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 59291c7de7cf1b347a0456e1c9404a46, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 59291c7de7cf1b347a0456e1c9404a46, type: 3}
       propertyPath: m_Name
       value: road-side-barrier
@@ -3113,6 +3193,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 14257ffa591290c42a98541213b29771, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 14257ffa591290c42a98541213b29771, type: 3}
       propertyPath: m_Name
       value: road-slant-high
@@ -3263,7 +3347,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: d31e33b13ededc042b3857032d4a6333, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3353,6 +3437,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (33)
@@ -3448,6 +3536,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (11)
@@ -3500,8 +3592,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 20.83588, y: 16.929998, z: 13.4}
-  m_Center: {x: -0.00000047683716, y: 8.464999, z: 0}
+  m_Size: {x: 20.83588, y: 16.929998, z: 12.460365}
+  m_Center: {x: 0, y: 8.464999, z: 0.006263598}
 --- !u!65 &340306387
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3583,6 +3675,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (65)
@@ -3678,6 +3774,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (48)
@@ -3781,6 +3881,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (41)
@@ -3872,6 +3976,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a486253be99619c438cad5938b2314c2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: a486253be99619c438cad5938b2314c2, type: 3}
       propertyPath: m_Name
       value: road-side-exit (4)
@@ -3975,6 +4083,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (42)
@@ -4072,7 +4184,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 1d4fe98eb388944408d2fb64d4d814b8, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4171,6 +4283,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a486253be99619c438cad5938b2314c2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: a486253be99619c438cad5938b2314c2, type: 3}
       propertyPath: m_Name
       value: road-side-exit (2)
@@ -4266,6 +4382,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (29)
@@ -4369,6 +4489,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (75)
@@ -4468,6 +4592,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 59291c7de7cf1b347a0456e1c9404a46, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 59291c7de7cf1b347a0456e1c9404a46, type: 3}
       propertyPath: m_Name
       value: road-side-barrier
@@ -4611,8 +4739,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 20.83588, y: 16.929998, z: 13.4}
-  m_Center: {x: -0.00000047683716, y: 8.464999, z: 0}
+  m_Size: {x: 20.83588, y: 16.929998, z: 12.933006}
+  m_Center: {x: 0, y: 8.464999, z: -0.23349755}
 --- !u!65 &389758076
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4654,7 +4782,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 12dbcee21a42a1a4da79871435d8a8a7, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4805,7 +4933,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: d31e33b13ededc042b3857032d4a6333, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4889,7 +5017,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 1d4fe98eb388944408d2fb64d4d814b8, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5000,6 +5128,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (53)
@@ -5091,6 +5223,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 021e3819f505f54428390035632a78c3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 021e3819f505f54428390035632a78c3, type: 3}
       propertyPath: m_Name
       value: road-side-entry (7)
@@ -5186,6 +5322,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (42)
@@ -5304,7 +5444,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: ea147d11cf09fbf4686fc847c4b5fe73, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5387,6 +5527,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a486253be99619c438cad5938b2314c2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: a486253be99619c438cad5938b2314c2, type: 3}
       propertyPath: m_Name
       value: road-side-exit (5)
@@ -5745,6 +5889,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (79)
@@ -5848,6 +5996,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (30)
@@ -5970,6 +6122,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e7929bce3d351384f9258c8764c86f3d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: e7929bce3d351384f9258c8764c86f3d, type: 3}
       propertyPath: m_Name
       value: road-intersection-path (4)
@@ -6073,6 +6229,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (51)
@@ -6176,6 +6336,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (67)
@@ -6271,6 +6435,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (10)
@@ -6331,6 +6499,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ff408d47b1b9137459cb14d2d0ac9c2e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: ff408d47b1b9137459cb14d2d0ac9c2e, type: 3}
       propertyPath: m_Name
       value: road-end (2)
@@ -6391,6 +6563,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ddbb7ae483a7c68478fd90cccb1658d6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: ddbb7ae483a7c68478fd90cccb1658d6, type: 3}
       propertyPath: m_Name
       value: road-curve-pavement (1)
@@ -6463,6 +6639,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (19)
@@ -6560,7 +6740,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 1d4fe98eb388944408d2fb64d4d814b8, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6812,6 +6992,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (64)
@@ -6930,7 +7114,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: da31e0174aa013f4d8b94d6fabff9bb3, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7008,6 +7192,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ddbb7ae483a7c68478fd90cccb1658d6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: ddbb7ae483a7c68478fd90cccb1658d6, type: 3}
       propertyPath: m_Name
       value: road-curve-pavement (3)
@@ -7103,6 +7291,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (43)
@@ -7206,6 +7398,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (7)
@@ -7340,6 +7536,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (34)
@@ -7443,6 +7643,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (20)
@@ -7569,6 +7773,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (5)
@@ -7633,6 +7841,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (50)
@@ -7728,6 +7940,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (7)
@@ -7788,6 +8004,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: dcf62b35068d65942b2d2719b044d5ae, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: dcf62b35068d65942b2d2719b044d5ae, type: 3}
       propertyPath: m_Name
       value: road-intersection
@@ -7875,7 +8095,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+  - {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7957,6 +8177,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (36)
@@ -8119,6 +8343,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 837ea220cd1721e40905481cf62f8295, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 837ea220cd1721e40905481cf62f8295, type: 3}
       propertyPath: m_Name
       value: road-bridge
@@ -8419,6 +8647,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (80)
@@ -8522,6 +8754,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (71)
@@ -8653,13 +8889,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.40862542, y: -0.2312831, z: 0.10784907, w: 0.87630016}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -29.57, z: 0}
 --- !u!114 &705507996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9031,6 +9267,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (81)
@@ -9134,6 +9374,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (57)
@@ -9268,6 +9512,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (45)
@@ -9359,6 +9607,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7202f51faa40efe45a29503dba4c6b0c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 7202f51faa40efe45a29503dba4c6b0c, type: 3}
       propertyPath: m_Name
       value: road-bend-square (4)
@@ -9462,6 +9714,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (72)
@@ -9581,7 +9837,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: b0e62be0fe6840c47818193f23ace889, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9671,6 +9927,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (28)
@@ -9770,6 +10030,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 59291c7de7cf1b347a0456e1c9404a46, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 59291c7de7cf1b347a0456e1c9404a46, type: 3}
       propertyPath: m_Name
       value: road-side-barrier
@@ -9885,6 +10149,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ff408d47b1b9137459cb14d2d0ac9c2e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: ff408d47b1b9137459cb14d2d0ac9c2e, type: 3}
       propertyPath: m_Name
       value: road-end (4)
@@ -9980,6 +10248,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (49)
@@ -10075,6 +10347,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (37)
@@ -10209,6 +10485,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (66)
@@ -10327,7 +10607,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+  - {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10409,6 +10689,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (4)
@@ -10712,8 +10996,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 20.83588, y: 16.929998, z: 13.4}
-  m_Center: {x: -0.00000047683716, y: 8.464999, z: 0}
+  m_Size: {x: 20.83588, y: 16.929998, z: 12.454575}
+  m_Center: {x: 0, y: 8.464999, z: 0.005560884}
 --- !u!65 &830504491
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10755,7 +11039,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 12dbcee21a42a1a4da79871435d8a8a7, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10862,7 +11146,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 837ea220cd1721e40905481cf62f8295, type: 3}
+  - {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10940,6 +11224,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7202f51faa40efe45a29503dba4c6b0c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 7202f51faa40efe45a29503dba4c6b0c, type: 3}
       propertyPath: m_Name
       value: road-bend-square (3)
@@ -11012,6 +11300,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (18)
@@ -11107,6 +11399,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (21)
@@ -11202,6 +11498,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 14257ffa591290c42a98541213b29771, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 14257ffa591290c42a98541213b29771, type: 3}
       propertyPath: m_Name
       value: road-slant-high (1)
@@ -11294,6 +11594,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e7929bce3d351384f9258c8764c86f3d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: e7929bce3d351384f9258c8764c86f3d, type: 3}
       propertyPath: m_Name
       value: road-intersection-path (1)
@@ -11354,6 +11658,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e7929bce3d351384f9258c8764c86f3d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: e7929bce3d351384f9258c8764c86f3d, type: 3}
       propertyPath: m_Name
       value: road-intersection-path (2)
@@ -11506,6 +11814,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (8)
@@ -11735,6 +12047,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (27)
@@ -11830,6 +12146,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (22)
@@ -11925,6 +12245,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (14)
@@ -12016,6 +12340,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a486253be99619c438cad5938b2314c2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: a486253be99619c438cad5938b2314c2, type: 3}
       propertyPath: m_Name
       value: road-side-exit (7)
@@ -12150,6 +12478,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (61)
@@ -12460,6 +12792,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (51)
@@ -12563,6 +12899,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (60)
@@ -12666,6 +13006,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (5)
@@ -12887,6 +13231,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (43)
@@ -12984,7 +13332,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 1d4fe98eb388944408d2fb64d4d814b8, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13111,7 +13459,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 058a2eed1ccd51647a0e33af84e975f0, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13217,7 +13565,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: b0e62be0fe6840c47818193f23ace889, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13307,6 +13655,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (11)
@@ -13504,6 +13856,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (41)
@@ -13618,8 +13974,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 20.83588, y: 16.929998, z: 13.4}
-  m_Center: {x: -0.00000047683716, y: 8.464999, z: 0}
+  m_Size: {x: 20.83588, y: 16.929998, z: 12.460366}
+  m_Center: {x: 0, y: 8.464999, z: -0.018792694}
 --- !u!65 &1075046671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13693,6 +14049,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (26)
@@ -13810,6 +14170,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7202f51faa40efe45a29503dba4c6b0c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 7202f51faa40efe45a29503dba4c6b0c, type: 3}
       propertyPath: m_Name
       value: road-bend-square
@@ -13897,7 +14261,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 771856a41b444424f93b2fb65c45b59d, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13979,6 +14343,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (46)
@@ -14082,6 +14450,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (29)
@@ -14185,6 +14557,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (26)
@@ -14276,6 +14652,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7202f51faa40efe45a29503dba4c6b0c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 7202f51faa40efe45a29503dba4c6b0c, type: 3}
       propertyPath: m_Name
       value: road-bend-square (1)
@@ -14340,6 +14720,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (18)
@@ -14431,6 +14815,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ddbb7ae483a7c68478fd90cccb1658d6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: ddbb7ae483a7c68478fd90cccb1658d6, type: 3}
       propertyPath: m_Name
       value: road-curve-pavement (4)
@@ -14522,6 +14910,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 98633478fe84a1e4fb66e1334b3d1c1d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 98633478fe84a1e4fb66e1334b3d1c1d, type: 3}
       propertyPath: m_Name
       value: road-roundabout
@@ -14644,6 +15036,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 021e3819f505f54428390035632a78c3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 021e3819f505f54428390035632a78c3, type: 3}
       propertyPath: m_Name
       value: road-side-entry (5)
@@ -14735,6 +15131,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ff408d47b1b9137459cb14d2d0ac9c2e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: ff408d47b1b9137459cb14d2d0ac9c2e, type: 3}
       propertyPath: m_Name
       value: road-end (3)
@@ -14854,7 +15254,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: b0e62be0fe6840c47818193f23ace889, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14963,6 +15363,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a486253be99619c438cad5938b2314c2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: a486253be99619c438cad5938b2314c2, type: 3}
       propertyPath: m_Name
       value: road-side-exit (3)
@@ -15035,6 +15439,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (58)
@@ -15197,7 +15605,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 5159a78449fdc19459f74eb4b683bc97, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15341,6 +15749,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (16)
@@ -15444,6 +15856,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (73)
@@ -15601,6 +16017,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (17)
@@ -15704,6 +16124,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (38)
@@ -15795,6 +16219,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6da1f57efccfd1942893378c04da77f3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 6da1f57efccfd1942893378c04da77f3, type: 3}
       propertyPath: m_Name
       value: road-intersection-line (2)
@@ -16055,6 +16483,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (32)
@@ -16177,6 +16609,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 021e3819f505f54428390035632a78c3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 021e3819f505f54428390035632a78c3, type: 3}
       propertyPath: m_Name
       value: road-side-entry (6)
@@ -16280,6 +16716,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (22)
@@ -16371,6 +16811,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 021e3819f505f54428390035632a78c3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 021e3819f505f54428390035632a78c3, type: 3}
       propertyPath: m_Name
       value: road-side-entry (1)
@@ -16489,7 +16933,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+  - {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16571,6 +17015,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (38)
@@ -16674,6 +17122,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (36)
@@ -16777,6 +17229,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (49)
@@ -16880,6 +17336,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (4)
@@ -16968,8 +17428,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 20.83588, y: 16.929998, z: 13.4}
-  m_Center: {x: -0.00000047683716, y: 8.464999, z: 0}
+  m_Size: {x: 20.83588, y: 16.929998, z: 12.944399}
+  m_Center: {x: 0, y: 8.464999, z: -0.22780392}
 --- !u!65 &1319682842
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17011,7 +17471,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 12dbcee21a42a1a4da79871435d8a8a7, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17089,6 +17549,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 64b2e5a96810f904aa3b9081e735d676, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 64b2e5a96810f904aa3b9081e735d676, type: 3}
       propertyPath: m_Name
       value: road-crossroad
@@ -17192,6 +17656,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (9)
@@ -17283,6 +17751,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 266a752da0557f2478385adff9a3b16d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 266a752da0557f2478385adff9a3b16d, type: 3}
       propertyPath: m_Name
       value: road-crossing
@@ -17355,6 +17827,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (76)
@@ -17458,6 +17934,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (54)
@@ -17553,6 +18033,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (34)
@@ -17644,6 +18128,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 021e3819f505f54428390035632a78c3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 021e3819f505f54428390035632a78c3, type: 3}
       propertyPath: m_Name
       value: road-side-entry (3)
@@ -17752,6 +18240,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (82)
@@ -17855,6 +18347,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (63)
@@ -17946,6 +18442,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7202f51faa40efe45a29503dba4c6b0c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 7202f51faa40efe45a29503dba4c6b0c, type: 3}
       propertyPath: m_Name
       value: road-bend-square (2)
@@ -18080,6 +18580,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (46)
@@ -18183,6 +18687,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (23)
@@ -18286,6 +18794,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (17)
@@ -18389,6 +18901,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (52)
@@ -18484,6 +19000,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (1)
@@ -18580,6 +19100,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e7929bce3d351384f9258c8764c86f3d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: e7929bce3d351384f9258c8764c86f3d, type: 3}
       propertyPath: m_Name
       value: road-intersection-path (3)
@@ -18671,6 +19195,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ff408d47b1b9137459cb14d2d0ac9c2e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: ff408d47b1b9137459cb14d2d0ac9c2e, type: 3}
       propertyPath: m_Name
       value: road-end (5)
@@ -18774,6 +19302,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (48)
@@ -18877,6 +19409,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (84)
@@ -18996,7 +19532,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: b0e62be0fe6840c47818193f23ace889, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19078,6 +19614,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (20)
@@ -19519,6 +20059,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (37)
@@ -19645,6 +20189,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (15)
@@ -19748,6 +20296,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (59)
@@ -19913,6 +20465,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (14)
@@ -20008,6 +20564,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (35)
@@ -20111,6 +20671,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (15)
@@ -20311,6 +20875,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (19)
@@ -20669,6 +21237,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (31)
@@ -20772,6 +21344,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (24)
@@ -20863,6 +21439,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ff408d47b1b9137459cb14d2d0ac9c2e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: ff408d47b1b9137459cb14d2d0ac9c2e, type: 3}
       propertyPath: m_Name
       value: road-end (6)
@@ -20981,7 +21561,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: ea147d11cf09fbf4686fc847c4b5fe73, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21076,6 +21656,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (35)
@@ -21167,6 +21751,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6da1f57efccfd1942893378c04da77f3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 6da1f57efccfd1942893378c04da77f3, type: 3}
       propertyPath: m_Name
       value: road-intersection-line (3)
@@ -21262,6 +21850,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (24)
@@ -21326,6 +21918,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (45)
@@ -21417,6 +22013,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6da1f57efccfd1942893378c04da77f3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 6da1f57efccfd1942893378c04da77f3, type: 3}
       propertyPath: m_Name
       value: road-intersection-line (1)
@@ -21481,6 +22081,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (44)
@@ -21576,6 +22180,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (40)
@@ -21758,6 +22366,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (13)
@@ -21861,6 +22473,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (12)
@@ -22134,7 +22750,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: b0e62be0fe6840c47818193f23ace889, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22262,6 +22878,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (27)
@@ -22365,6 +22985,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (8)
@@ -22578,6 +23202,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (23)
@@ -22646,6 +23274,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 59291c7de7cf1b347a0456e1c9404a46, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 59291c7de7cf1b347a0456e1c9404a46, type: 3}
       propertyPath: m_Name
       value: road-side-barrier (1)
@@ -22822,8 +23454,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 20.83588, y: 16.929998, z: 13.4}
-  m_Center: {x: -0.00000047683716, y: 8.464999, z: 0}
+  m_Size: {x: 20.83588, y: 16.929998, z: 12.443454}
+  m_Center: {x: 0, y: 8.464999, z: 0.011121133}
 --- !u!65 &1727523191
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22865,7 +23497,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 12dbcee21a42a1a4da79871435d8a8a7, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22943,6 +23575,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ddbb7ae483a7c68478fd90cccb1658d6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: ddbb7ae483a7c68478fd90cccb1658d6, type: 3}
       propertyPath: m_Name
       value: road-curve-pavement
@@ -23015,6 +23651,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (85)
@@ -23149,6 +23789,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (21)
@@ -23249,6 +23893,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (3)
@@ -23313,6 +23961,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (30)
@@ -23432,8 +24084,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 20.83588, y: 16.929998, z: 13.4}
-  m_Center: {x: -0.00000047683716, y: 8.464999, z: 0}
+  m_Size: {x: 20.83588, y: 16.929998, z: 12.454576}
+  m_Center: {x: 0, y: 8.464999, z: -0.005561517}
 --- !u!65 &1791122248
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23475,7 +24127,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 12dbcee21a42a1a4da79871435d8a8a7, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23553,6 +24205,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 021e3819f505f54428390035632a78c3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 021e3819f505f54428390035632a78c3, type: 3}
       propertyPath: m_Name
       value: road-side-entry (4)
@@ -23749,6 +24405,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (70)
@@ -23883,6 +24543,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (50)
@@ -23986,6 +24650,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (74)
@@ -24105,8 +24773,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 20.83588, y: 16.929998, z: 13.4}
-  m_Center: {x: -0.00000047683716, y: 8.464999, z: 0}
+  m_Size: {x: 20.83588, y: 16.929998, z: 12.921616}
+  m_Center: {x: 0, y: 8.464999, z: -0.23919277}
 --- !u!65 &1847411201
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24148,7 +24816,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 12dbcee21a42a1a4da79871435d8a8a7, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24234,6 +24902,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 59291c7de7cf1b347a0456e1c9404a46, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 59291c7de7cf1b347a0456e1c9404a46, type: 3}
       propertyPath: m_Name
       value: road-side-barrier
@@ -24378,7 +25050,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 837ea220cd1721e40905481cf62f8295, type: 3}
+  - {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24491,6 +25163,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (9)
@@ -24648,6 +25324,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (55)
@@ -24739,6 +25419,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: dcf62b35068d65942b2d2719b044d5ae, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: dcf62b35068d65942b2d2719b044d5ae, type: 3}
       propertyPath: m_Name
       value: road-intersection (1)
@@ -24834,6 +25518,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (13)
@@ -24937,6 +25625,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (68)
@@ -25032,6 +25724,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (47)
@@ -25312,6 +26008,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (3)
@@ -25384,6 +26084,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low
@@ -25479,6 +26183,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (39)
@@ -25694,7 +26402,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 1d4fe98eb388944408d2fb64d4d814b8, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25899,6 +26607,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half
@@ -25968,6 +26680,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (33)
@@ -26071,6 +26787,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (40)
@@ -26255,6 +26975,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6da1f57efccfd1942893378c04da77f3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 6da1f57efccfd1942893378c04da77f3, type: 3}
       propertyPath: m_Name
       value: road-intersection-line
@@ -26327,6 +27051,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (16)
@@ -26513,6 +27241,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (77)
@@ -26616,6 +27348,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (69)
@@ -26734,7 +27470,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 2030f1dc7c7f17840adb0717ca096b52, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26816,6 +27552,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (31)
@@ -27012,6 +27752,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a486253be99619c438cad5938b2314c2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: a486253be99619c438cad5938b2314c2, type: 3}
       propertyPath: m_Name
       value: road-side-exit
@@ -27103,6 +27847,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e7929bce3d351384f9258c8764c86f3d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: e7929bce3d351384f9258c8764c86f3d, type: 3}
       propertyPath: m_Name
       value: road-intersection-path
@@ -27410,6 +28158,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (1)
@@ -27470,6 +28222,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: dcf62b35068d65942b2d2719b044d5ae, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: dcf62b35068d65942b2d2719b044d5ae, type: 3}
       propertyPath: m_Name
       value: road-intersection (2)
@@ -27605,6 +28361,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 04aa2070926d8dd4a9452be65e87b8ce, type: 3}
       propertyPath: m_Name
       value: road-straight-half (12)
@@ -27665,6 +28425,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ff408d47b1b9137459cb14d2d0ac9c2e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: ff408d47b1b9137459cb14d2d0ac9c2e, type: 3}
       propertyPath: m_Name
       value: road-end
@@ -27737,6 +28501,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (2)
@@ -27797,6 +28565,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 021e3819f505f54428390035632a78c3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 021e3819f505f54428390035632a78c3, type: 3}
       propertyPath: m_Name
       value: road-side-entry
@@ -27900,6 +28672,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
     - target: {fileID: 919132149155446097, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
       propertyPath: m_Name
       value: tile-low (32)
@@ -28019,7 +28795,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 058a2eed1ccd51647a0e33af84e975f0, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28419,7 +29195,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 5159a78449fdc19459f74eb4b683bc97, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28480,7 +29256,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 5fcd5db320cc42c41b30c5e81d9b0ad4, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29261,7 +30037,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 66d703089d462544f9f01cbd8001d78f, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29318,7 +30094,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: ea147d11cf09fbf4686fc847c4b5fe73, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29435,7 +30211,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 02221a26b12f8e34ea85a87ebf2b62e6, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29519,7 +30295,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: da31e0174aa013f4d8b94d6fabff9bb3, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29561,7 +30337,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: ec9fc8ce5430f5443b6d0acf2fce68bc, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29603,7 +30379,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: b0e62be0fe6840c47818193f23ace889, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29645,7 +30421,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 73af41a0930b7d3458c34d46bfdfb848, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29687,7 +30463,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 8e711d405d624c74a86ba2b0845f786f, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29729,7 +30505,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 956e30247792d2d47b4deba0ffe47ac3, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29771,7 +30547,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 956e30247792d2d47b4deba0ffe47ac3, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29813,7 +30589,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 12dbcee21a42a1a4da79871435d8a8a7, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29855,7 +30631,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 66d703089d462544f9f01cbd8001d78f, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29897,7 +30673,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: b0e62be0fe6840c47818193f23ace889, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29939,7 +30715,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 66d703089d462544f9f01cbd8001d78f, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29981,7 +30757,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 837ea220cd1721e40905481cf62f8295, type: 3}
+  - {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30023,7 +30799,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 1d4fe98eb388944408d2fb64d4d814b8, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30065,7 +30841,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 2030f1dc7c7f17840adb0717ca096b52, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30107,7 +30883,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 73af41a0930b7d3458c34d46bfdfb848, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30149,7 +30925,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 12dbcee21a42a1a4da79871435d8a8a7, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30191,7 +30967,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: da8e8dc8315252443b1ca00e8f0f5885, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30233,7 +31009,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: b0e62be0fe6840c47818193f23ace889, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30296,7 +31072,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: ec9fc8ce5430f5443b6d0acf2fce68bc, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30380,7 +31156,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 956e30247792d2d47b4deba0ffe47ac3, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30628,7 +31404,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 96c8e38fc9d69e54989f911cf32bb892, type: 3}
+  - {fileID: 2100000, guid: 8a6e6e7bfe6a49048afcb59a1f88c45f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30748,7 +31524,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 058a2eed1ccd51647a0e33af84e975f0, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31377,7 +32153,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: d31e33b13ededc042b3857032d4a6333, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31516,7 +32292,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 76bb216f6f38ee9499650344d75984c1, type: 3}
+  - {fileID: 2100000, guid: c414eb3b8fd4a3040afc303856dbe360, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31750,7 +32526,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 626b09d3193ddb147b4f0d03b0d66580, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31819,7 +32595,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 058a2eed1ccd51647a0e33af84e975f0, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32143,7 +32919,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 771856a41b444424f93b2fb65c45b59d, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32177,7 +32953,7 @@ GameObject:
   - component: {fileID: 7437884385956834416}
   - component: {fileID: 3008047733022223146}
   - component: {fileID: 8237865070468281514}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32204,7 +32980,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 058a2eed1ccd51647a0e33af84e975f0, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32359,7 +33135,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 2af86e8bad6eac142b75bd4f6b23e99a, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32487,8 +33263,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.85, y: 0.93, z: 4.34}
-  m_Center: {x: 0, y: 0.85, z: -0.018977284}
+  m_Size: {x: 1.707922, y: 0.93000007, z: 3.4439535}
+  m_Center: {x: 0.0000009536743, y: 0.85, z: 0.0029406548}
 --- !u!4 &8287144901053940717
 Transform:
   m_ObjectHideFlags: 0
@@ -32543,7 +33319,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: da31e0174aa013f4d8b94d6fabff9bb3, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32754,7 +33530,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6538903991835684241, guid: 058a2eed1ccd51647a0e33af84e975f0, type: 3}
+  - {fileID: 2100000, guid: 52b7ae7f74765cd418ba32c57852bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
