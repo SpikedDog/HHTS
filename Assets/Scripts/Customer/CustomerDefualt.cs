@@ -35,7 +35,7 @@ public class CustomerDefault : MonoBehaviour
             //transform.SetParent(player.transform);
             //transform.localPosition = Vector3.zero;
             
-            object.GameObject.GetComponent<MeshRenderer>().enabled = false; //CHANGE WHEN ANIMATION IS MADE!!
+            //object.GameObject.GetComponent<MeshRenderer>().enabled = false; //CHANGE WHEN ANIMATION IS MADE!!
             currentDestination.gameObject.SetActive(true);
             UIManager.instance.SetObjectives("Take customer to the destination: " + currentDestination.name);
             arrowController.SetDestination(currentDestination); // Sets the destination on the arrow
