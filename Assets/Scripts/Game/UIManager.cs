@@ -13,8 +13,9 @@ public class UIManager : MonoBehaviour
     public Text timerText;
     public Text pointsText;
     public Text objectivesText;
+    public Text riderScore;
     public float timeRemaining = 180;
-    [SerializeField]private int points = 0;
+    [SerializeField] private int points = 0;
     private string objectives = "Pick up CUSTOMERS to make BUXS!";
     private GameObject InGameUI;
     private GameObject nameInput;
@@ -89,6 +90,11 @@ public class UIManager : MonoBehaviour
     {
         points += amount;
         UpdateUI();
+    }
+
+    public void UpdateRideScore(int amount)
+    {
+        riderScore.text = $"Ride Score: {amount}";
     }
 
     public void SetObjectives(string newObjectives)

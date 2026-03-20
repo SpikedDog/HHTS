@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class CustomerDefault : MonoBehaviour
 {
-    public int points = 50;
+    //public int points;
     public Transform currentDestination;
     public Transform scenicRoute;
     public Collider interactionCollider;
     private bool isPickedUp = false;
     private ArrowPointer arrowController;
     public Renderer sphereRenderer;
+    public GameObject Hector;
+    private RiderScore rideScore;
 
     void Start()
     {
         arrowController = FindObjectOfType<ArrowPointer>();
+        rideScore = FindObjectOfType<RiderScore>();
     }
 
     public void PickUpCustomer()
@@ -29,20 +32,23 @@ public class CustomerDefault : MonoBehaviour
             }
         }
         isPickedUp = true;
+        rideScore.StartTimer();
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
             //transform.SetParent(player.transform);
             //transform.localPosition = Vector3.zero;
             
-            //object.GameObject.GetComponent<MeshRenderer>().enabled = false; //CHANGE WHEN ANIMATION IS MADE!!
+            //gameObject.GetComponent<MeshRenderer>().enabled = false; //CHANGE WHEN ANIMATION IS MADE!!
             currentDestination.gameObject.SetActive(true);
             UIManager.instance.SetObjectives("Take customer to the destination: " + currentDestination.name);
             arrowController.SetDestination(currentDestination); // Sets the destination on the arrow
-            if (sphereRenderer != null)
-            {
-                sphereRenderer.enabled = false;
-            }
+            //if (sphereRenderer != null)
+            //{
+            //    sphereRenderer.enabled = false;
+            //}
+            Hector.transform.position = new Vector3(0,-2000,0);//Hide
+            Hector.transform.parent = player.transform;
         }
         else
         {
@@ -56,7 +62,6 @@ public class CustomerDefault : MonoBehaviour
         {
             isPickedUp = false;
             transform.SetParent(null);
-            UIManager.instance.AddPoints(points);
             UIManager.instance.SetObjectives("Bring customer to destination");
             arrowController.ClearDestination(); // Clear the destination on the arrow
             if (sphereRenderer != null) //Customer Sphere disappears when picked up
@@ -67,13 +72,16 @@ public class CustomerDefault : MonoBehaviour
             {
                 currentDestination.gameObject.SetActive(false);
             }
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 
     public void Interact()
     {
-        PickUpCustomer();
+        if (isPickedUp == false)
+        {
+            PickUpCustomer();
+        }
         //SetTipObjective();
     }
 

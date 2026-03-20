@@ -6,11 +6,20 @@ public class Destination : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        CustomerDefault customer = other.GetComponentInChildren<CustomerDefault>();
-        if (customer != null && customer.currentDestination == transform)
+        if (other.CompareTag("Player"))
         {
-            customer.DropOffCustomer();
+            var hector = other.gameObject.GetComponentInChildren<Hector>();
+            if (hector != null)
+            {
+                hector.transform.parent = transform;
+                hector.transform.position = transform.GetChild(0).position;
+            }
         }
+        //CustomerDefault customer = other.GetComponentInChildren<CustomerDefault>();
+        //if (customer != null && customer.currentDestination == transform)
+        //{
+        //    customer.DropOffCustomer();
+        //}
        
     }
 }
