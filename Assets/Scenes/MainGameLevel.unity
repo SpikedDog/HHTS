@@ -16834,7 +16834,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab00f5551cea93d40b4198713da21197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customer: {fileID: 5724514997198465029, guid: ab9bf9f64a0891240b35ae6cc6434e7b, type: 3}
+  interactSphere: {fileID: 5724514997198465029, guid: b62ded3f125bbdb48833506f5e607463, type: 3}
+  hector: {fileID: 8596350592626194766, guid: e5fd0b5b820280f4d9727dad98f3ce85, type: 3}
   spawnPoints:
   - {fileID: 49804345}
   - {fileID: 221370402}

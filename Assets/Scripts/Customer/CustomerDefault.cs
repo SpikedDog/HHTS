@@ -6,18 +6,19 @@ public class CustomerDefault : MonoBehaviour
 {
     //public int points;
     public Transform currentDestination;
-    public Transform scenicRoute;
-    public Collider interactionCollider;
-    private bool isPickedUp = false;
+    //public Transform scenicRoute;
+    [HideInInspector]public bool isPickedUp = false;
     private ArrowPointer arrowController;
-    public Renderer sphereRenderer;
-    public GameObject Hector;
+    //public Renderer sphereRenderer;
+    //public GameObject Hector;
     private RiderScore rideScore;
+    private CustomerManager customerManager;
 
     void Start()
     {
         arrowController = FindObjectOfType<ArrowPointer>();
         rideScore = FindObjectOfType<RiderScore>();
+        customerManager = FindObjectOfType<CustomerManager>();
     }
 
     public void PickUpCustomer()
@@ -32,6 +33,10 @@ public class CustomerDefault : MonoBehaviour
             }
         }
         isPickedUp = true;
+        customerManager.TurnOffInteract();
+        int index = customerManager.FindIndex(this);
+        customerManager.RemoveInteract(index);
+        
         rideScore.StartTimer();
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
@@ -47,8 +52,8 @@ public class CustomerDefault : MonoBehaviour
             //{
             //    sphereRenderer.enabled = false;
             //}
-            Hector.transform.position = new Vector3(0,-2000,0);//Hide
-            Hector.transform.parent = player.transform;
+            transform.position = new Vector3(0,-2000,0);//Hide
+            transform.parent = player.transform;
         }
         else
         {
@@ -64,15 +69,16 @@ public class CustomerDefault : MonoBehaviour
             transform.SetParent(null);
             UIManager.instance.SetObjectives("Bring customer to destination");
             arrowController.ClearDestination(); // Clear the destination on the arrow
-            if (sphereRenderer != null) //Customer Sphere disappears when picked up
-            {
-                sphereRenderer.enabled = true;
-            }
+            //if (sphereRenderer != null) //Customer Sphere disappears when picked up
+            //{
+            //    sphereRenderer.enabled = true;
+            //}
             if (currentDestination != null)
             {
                 currentDestination.gameObject.SetActive(false);
             }
-            //Destroy(gameObject);
+            Destroy(gameObject, 5f);
+            customerManager.RemoveHector(this);
         }
     }
 

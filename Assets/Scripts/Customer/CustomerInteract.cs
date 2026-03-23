@@ -8,13 +8,13 @@ public class CustomerInteract : MonoBehaviour
     [SerializeField] GameObject interactObject;
     private PlayerControls inputActions;
     private bool isPlayerInRange = false;
-    private CustomerDefault customerDefault;
+    public CustomerDefault customerDefault;
     public bool customerActive;
 
     void Awake()
     {
         inputActions = new PlayerControls();
-        customerDefault = interactObject.GetComponent<CustomerDefault>();
+        //customerDefault = interactObject.GetComponent<CustomerDefault>();
     }
 
     void OnEnable()
@@ -39,6 +39,15 @@ public class CustomerInteract : MonoBehaviour
             Debug.Log("OnClick Active");
             customerDefault.Interact();
         }
+    }
+
+    
+
+
+
+    public void SetHector(CustomerDefault aHector)
+    {
+        customerDefault = aHector;
     }
 
     void OnTriggerEnter(Collider other)

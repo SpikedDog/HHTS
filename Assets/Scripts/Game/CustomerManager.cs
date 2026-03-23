@@ -1,16 +1,18 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class CustomerManager : MonoBehaviour
 {
-    public GameObject customer;
+    public GameObject interactSphere;
+    public GameObject hector;
     public Transform[] spawnPoints;
     public int maxSpawnCount = 10;
     //public float spawnRadius = 25f;
     //public float minDisatance = 10f;
 
-    private List<GameObject> spawnedCustomers = new List<GameObject> ();
+    private List<GameObject> spawnedInteract = new List<GameObject> ();
+    private List<GameObject> spawnedHectors = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
@@ -24,11 +26,15 @@ public class CustomerManager : MonoBehaviour
         for (int i = 0; i < spawnCount; i++)
         {
             Transform spawnPoint = spawnPoints[i];
-            GameObject spawnedPrefab = Instantiate(customer, spawnPoint.position, spawnPoint.rotation);
-            spawnedCustomers.Add(spawnedPrefab);
+            GameObject spawnedPrefab = Instantiate(interactSphere, spawnPoint.position, spawnPoint.rotation);
+            GameObject hectorPrefab = Instantiate(hector, spawnPoint.position, spawnPoint.rotation);
+            spawnedInteract.Add(spawnedPrefab);
+            spawnedHectors.Add(hectorPrefab);
+            spawnedPrefab.transform.GetChild(0).GetComponent<CustomerInteract>().customerDefault = hectorPrefab.GetComponent<CustomerDefault>();
         }
         Shuffle();
-        TurnOff();
+        TurnOffInteract();
+        TurnOffHector();
         TurnOnFirstSix();
     }
 
@@ -36,27 +42,65 @@ public class CustomerManager : MonoBehaviour
     {
         for (int i = 0; i < 100; i++)
         {
-            int c1 = Random.Range(0, spawnedCustomers.Count);
-            int c2 = Random.Range(0, spawnedCustomers.Count);
-            GameObject temp = spawnedCustomers[c1];
-            spawnedCustomers[c1] = spawnedCustomers[c2];
-            spawnedCustomers[c2] = temp;
+            int c1 = Random.Range(0, spawnedInteract.Count);
+            int c2 = Random.Range(0, spawnedInteract.Count);
+            GameObject temp = spawnedInteract[c1];
+            spawnedInteract[c1] = spawnedInteract[c2];
+            spawnedInteract[c2] = temp;
+
+            
+            GameObject tempHec = spawnedHectors[c1];
+            spawnedHectors[c1] = spawnedHectors[c2];
+            spawnedHectors[c2] = tempHec;
+        }
+    }
+  
+
+    public void RemoveInteract(int index)
+    {
+        spawnedInteract.RemoveAt(index);
+        
+    }
+
+    public void RemoveHector(CustomerDefault hector)
+    {
+        spawnedHectors.Remove(hector.gameObject);
+    }
+
+    public void TurnOffInteract()
+    {
+        for (int i = 0; i < spawnedInteract.Count; i++)
+        {
+            spawnedInteract[i].SetActive(false);
         }
     }
 
-    void TurnOff()
+    public void TurnOffHector()
     {
-        for (int i = 0; i < spawnedCustomers.Count; i++)
+        for (int i = 0; i < spawnedInteract.Count; i++)
         {
-            spawnedCustomers[i].SetActive(false);
+            spawnedHectors[i].SetActive(false);
         }
+    }
+
+    public int FindIndex(CustomerDefault hector)
+    {
+        for (int i = 0; i < spawnedHectors.Count; i++)
+        {
+            if (spawnedHectors[i] == hector.gameObject)
+            {
+                return i;
+            }
+        }
+        return -1;
     }
 
     void TurnOnFirstSix()
     {
         for (int i = 0; i < 6; i++)
         {
-            spawnedCustomers[i].SetActive(true);
+            spawnedInteract[i].SetActive(true);
+            spawnedHectors[i].SetActive(true);
         }
     }
 
