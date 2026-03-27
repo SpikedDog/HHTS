@@ -21,22 +21,22 @@ public class CustomerInteract : MonoBehaviour
     {
         inputActions.MovementCommands.Interaction.performed += OnClick;
         inputActions.MovementCommands.Enable();
-        Debug.Log("Interaction Enabled");
+        //Debug.Log("Interaction Enabled");
     }
 
     void OnDisable()
     {
         inputActions.MovementCommands.Interaction.performed -= OnClick;
         inputActions.MovementCommands.Disable();
-        Debug.Log("Interaction Disabled");
+        //Debug.Log("Interaction Disabled");
     }
 
     private void OnClick(InputAction.CallbackContext context)
     {
-        Debug.Log("Temp1");
+        //Debug.Log("Temp1");
         if (isPlayerInRange && customerDefault != null)
         {
-            Debug.Log("OnClick Active");
+            //Debug.Log("OnClick Active");
             customerDefault.Interact();
         }
     }
@@ -52,11 +52,11 @@ public class CustomerInteract : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Temp2");
+        //Debug.Log("Temp2");
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;
-            Debug.Log("Delete True");
+            //Debug.Log("Delete True");
         }
     }
 
@@ -65,7 +65,7 @@ public class CustomerInteract : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = false;
-            Debug.Log("Delete False");
+            //Debug.Log("Delete False");
         }
     }
 }

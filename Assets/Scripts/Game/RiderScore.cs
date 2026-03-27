@@ -4,22 +4,29 @@ using UnityEngine;
 
 public class RiderScore : MonoBehaviour
 {
+    public int setPoints = 100;
     public int maxPoints;
-    public int points;
+    public int rsPoints;
     public bool timerStart = false;
     private float ticker;
     private float fractorial = 0.5f;
     public UIManager manager;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        ResetPoints();
+        RoundPoints();
     }
 
     private void ResetPoints()
     {
-        points = maxPoints;
+        rsPoints = setPoints;
+        manager.UpdateRideScore(rsPoints);
+    }
+
+    private void RoundPoints()
+    {
+        rsPoints = maxPoints;
         ticker = Time.time;
     }
 
@@ -33,8 +40,8 @@ public class RiderScore : MonoBehaviour
         }
         if (Time.time > ticker + fractorial)
         {
-            points -= 1;
-            manager.UpdateRideScore(points);
+            rsPoints -= 1;
+            manager.UpdateRideScore(rsPoints);
             ticker = Time.time;
         }
     }
@@ -42,6 +49,14 @@ public class RiderScore : MonoBehaviour
     public void StartTimer()
     {
         timerStart = true;
+        RoundPoints();
+    }
+
+    public void StopTimer()
+    {
+        manager.AddPoints(rsPoints);
+        timerStart = false;
         ResetPoints();
+        Debug.Log("Calling Reset Points");
     }
 }

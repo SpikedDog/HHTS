@@ -18,6 +18,10 @@ public class CustomerManager : MonoBehaviour
     void Start()
     {
         SpawnCustomers();
+        Shuffle();
+        TurnOffInteract();
+        TurnOffHector();
+        TurnOnFirstSix();
     }
 
     void SpawnCustomers()
@@ -32,10 +36,6 @@ public class CustomerManager : MonoBehaviour
             spawnedHectors.Add(hectorPrefab);
             spawnedPrefab.transform.GetChild(0).GetComponent<CustomerInteract>().customerDefault = hectorPrefab.GetComponent<CustomerDefault>();
         }
-        Shuffle();
-        TurnOffInteract();
-        TurnOffHector();
-        TurnOnFirstSix();
     }
 
     void Shuffle()
@@ -59,12 +59,12 @@ public class CustomerManager : MonoBehaviour
     public void RemoveInteract(int index)
     {
         spawnedInteract.RemoveAt(index);
-        
     }
 
-    public void RemoveHector(CustomerDefault hector)
+    public void RemoveHector(CustomerDefault hector) //public void RemoveHector(CustomerDefault hector)
     {
         spawnedHectors.Remove(hector.gameObject);
+        //spawnedHectors.Remove(hector.gameObject);
     }
 
     public void TurnOffInteract()
@@ -72,6 +72,14 @@ public class CustomerManager : MonoBehaviour
         for (int i = 0; i < spawnedInteract.Count; i++)
         {
             spawnedInteract[i].SetActive(false);
+        }
+    }
+
+    public void TurnOnInteract()
+    {
+        for (int i = 0; i < spawnedInteract.Count; i++)
+        {
+            spawnedInteract[i].SetActive(true);
         }
     }
 

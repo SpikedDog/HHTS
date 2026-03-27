@@ -13,12 +13,14 @@ public class CustomerDefault : MonoBehaviour
     //public GameObject Hector;
     private RiderScore rideScore;
     private CustomerManager customerManager;
+    private UIManager uiManager;
 
     void Start()
     {
         arrowController = FindObjectOfType<ArrowPointer>();
         rideScore = FindObjectOfType<RiderScore>();
         customerManager = FindObjectOfType<CustomerManager>();
+        uiManager = FindObjectOfType<UIManager>();
     }
 
     public void PickUpCustomer()
@@ -37,7 +39,7 @@ public class CustomerDefault : MonoBehaviour
         int index = customerManager.FindIndex(this);
         customerManager.RemoveInteract(index);
         
-        rideScore.StartTimer();
+        rideScore.StartTimer(); //RS STARTS COUNT ON PICKUP
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
@@ -77,6 +79,7 @@ public class CustomerDefault : MonoBehaviour
             {
                 currentDestination.gameObject.SetActive(false);
             }
+            rideScore.StopTimer();  //RS ADD HERE
             Destroy(gameObject, 5f);
             customerManager.RemoveHector(this);
         }

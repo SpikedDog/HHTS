@@ -83,7 +83,7 @@ public class UIManager : MonoBehaviour
 
         // Update Objectives
         objectivesText.text = "Objectives: " + objectives;
-        Debug.Log("Points: " + points);
+        //Debug.Log("Points: " + points);
     }
 
     public void AddPoints(int amount)

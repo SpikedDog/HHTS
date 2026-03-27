@@ -14,7 +14,7 @@ public class GoofyNewControls : MonoBehaviour
     public float loSpeedAng = 30;
     public float hiSpeedAng = 1;
     private float decelSpeed = 0.02f;
-    private float topspeed = 150;
+    //private float topspeed = 150;
     public Rigidbody rb;
     //public GameObject smokePrefab;
     //public WheelParticles wheelParticles;
@@ -178,7 +178,7 @@ public class GoofyNewControls : MonoBehaviour
         }
         else
         {
-            Debug.Log($"Motor: wheel rpm {wheelRL.rpm} gas {gasInput} brake {brakeInput} reverse {reverseInput}");
+            //Debug.Log($"Motor: wheel rpm {wheelRL.rpm} gas {gasInput} brake {brakeInput} reverse {reverseInput}");
             SetWheels(0, decelSpeed);
         }
     }
