@@ -77,9 +77,17 @@ public class CustomerManager : MonoBehaviour
 
     public void TurnOnInteract()
     {
-        for (int i = 0; i < spawnedInteract.Count; i++)
+        for (int i = 0; i < 6; i++) //int i = 0; i < spawnedInteract.Count; i++
         {
             spawnedInteract[i].SetActive(true);
+        }
+    }
+
+    public void TurnOnHector()
+    {
+        for (int i = 0; i < 6; i++)
+        {
+            spawnedHectors[i].SetActive(true);
         }
     }
 

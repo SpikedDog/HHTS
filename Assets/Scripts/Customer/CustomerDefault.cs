@@ -80,8 +80,11 @@ public class CustomerDefault : MonoBehaviour
                 currentDestination.gameObject.SetActive(false);
             }
             rideScore.StopTimer();  //RS ADD HERE
+            customerManager.TurnOnInteract();
             Destroy(gameObject, 5f);
             customerManager.RemoveHector(this);
+            customerManager.TurnOnHector();
+            Debug.Log("TesterDefault");
         }
     }
 
