@@ -17,6 +17,10 @@ public class CustomerManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //for (i = 10)
+        //{
+        //    SpawnHector()
+        //}
         SpawnCustomers();
         Shuffle();
         TurnOffInteract();
@@ -37,6 +41,15 @@ public class CustomerManager : MonoBehaviour
             spawnedPrefab.transform.GetChild(0).GetComponent<CustomerInteract>().customerDefault = hectorPrefab.GetComponent<CustomerDefault>();
         }
     }
+
+    //SpawnHector()
+    //{
+    //    if (SpawnPosInt > 10)
+    //    {
+    //        SpawnPosInt = 0
+    //    }
+    //    Instantiate(Hector, HectorSpawnPos(SpawnPosInt));
+    //}
 
     void Shuffle()
     {
@@ -77,7 +90,7 @@ public class CustomerManager : MonoBehaviour
 
     public void TurnOnInteract()
     {
-        for (int i = 0; i < 6; i++) //int i = 0; i < spawnedInteract.Count; i++
+        for (int i = 0; i < 2; i++) //int i = 0; i < spawnedInteract.Count; i++
         {
             spawnedInteract[i].SetActive(true);
         }
@@ -85,7 +98,7 @@ public class CustomerManager : MonoBehaviour
 
     public void TurnOnHector()
     {
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < 2; i++) //int i = 0; i < 6; i++
         {
             spawnedHectors[i].SetActive(true);
         }
@@ -118,6 +131,11 @@ public class CustomerManager : MonoBehaviour
             spawnedInteract[i].SetActive(true);
             spawnedHectors[i].SetActive(true);
         }
+    }
+
+    public void SpawnNewHec()
+    {
+
     }
 
     //void SpawnCustomers()
