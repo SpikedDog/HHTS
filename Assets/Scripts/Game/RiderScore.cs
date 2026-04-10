@@ -9,7 +9,7 @@ public class RiderScore : MonoBehaviour
     public int rsPoints;
     public bool timerStart = false;
     private float ticker;
-    private float fractorial = 0.5f;
+    private float fractorial = 0.25f;
     public UIManager manager;
 
     // Start is called before the first frame update
