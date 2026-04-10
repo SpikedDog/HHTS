@@ -69,7 +69,7 @@ public class CustomerDefault : MonoBehaviour
         {
             isPickedUp = false;
             transform.SetParent(null);
-            UIManager.instance.SetObjectives("Bring customer to destination"); //CHANGE THAT LOL
+            UIManager.instance.SetObjectives("Find a new customer to pick up"); //CHANGE THAT LOL
             arrowController.ClearDestination(); // Clear the destination on the arrow
             //if (sphereRenderer != null) //Customer Sphere disappears when picked up
             //{
@@ -81,7 +81,7 @@ public class CustomerDefault : MonoBehaviour
             }
             rideScore.StopTimer();  //RS ADD HERE
             customerManager.TurnOnInteract();
-            Destroy(gameObject, 5f);
+            Destroy(gameObject, 7.5f);
             customerManager.RemoveHector(this);
             customerManager.TurnOnHector();
             Debug.Log("TesterDefault");

@@ -7,7 +7,7 @@ public class CustomerManager : MonoBehaviour
     public GameObject interactSphere;
     public GameObject hector;
     public Transform[] spawnPoints;
-    public int maxSpawnCount = 10;
+    public int maxSpawnCount;
     //public float spawnRadius = 25f;
     //public float minDisatance = 10f;
 
@@ -90,7 +90,7 @@ public class CustomerManager : MonoBehaviour
 
     public void TurnOnInteract()
     {
-        for (int i = 0; i < 2; i++) //int i = 0; i < spawnedInteract.Count; i++
+        for (int i = 0; i < 6; i++) //int i = 0; i < spawnedInteract.Count; i++
         {
             spawnedInteract[i].SetActive(true);
         }
@@ -98,7 +98,7 @@ public class CustomerManager : MonoBehaviour
 
     public void TurnOnHector()
     {
-        for (int i = 0; i < 2; i++) //int i = 0; i < 6; i++
+        for (int i = 0; i < 6; i++) //int i = 0; i < 6; i++
         {
             spawnedHectors[i].SetActive(true);
         }

@@ -4,26 +4,26 @@ using UnityEngine;
 
 public class NewManager : MonoBehaviour
 {
-    Start()
-    {
-        for (i = 10)
-        {
-            SpawnHector()
-            }
-    }
+    //Start()
+    //{
+    //    for (i = 10)
+    //    {
+    //        SpawnHector()
+    //        }
+    //}
 
-    SpawnHector()
-    {
-        if (SpawnPosInt > 10)
-        {
-            SpawnPosInt = 0
-        }
-        Instantiate(Hector, HectorSpawnPos(SpawnPosInt));
-    }
+    //SpawnHector()
+    //{
+    //    if (SpawnPosInt > 10)
+    //    {
+    //        SpawnPosInt = 0;
+    //    }
+    //    Instantiate(Hector, HectorSpawnPos(SpawnPosInt));
+    //}
 
-    DespawnHector()
-    {
-        Destroy(Hector);
-        SpawnHector();
-    }
+    //DespawnHector()
+    //{
+    //    Destroy(Hector);
+    //    SpawnHector();
+    //}
 }
