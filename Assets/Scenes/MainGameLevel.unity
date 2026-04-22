@@ -282,8 +282,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 61
-  m_fontSizeBase: 61
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -16296,10 +16296,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eb00b69301943e41b7d39194b2c4350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 0}
-  pointsText: {fileID: 0}
-  objectivesText: {fileID: 0}
-  riderScore: {fileID: 0}
+  timerText: {fileID: 1529220062}
+  pointsText: {fileID: 1241138052}
+  objectivesText: {fileID: 15427192}
+  riderScore: {fileID: 1136301975}
   timeRemaining: 180
   points: 0
   isGameOver: 0
@@ -16936,8 +16936,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 61
-  m_fontSizeBase: 61
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -18947,8 +18947,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 61
-  m_fontSizeBase: 61
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -24236,8 +24236,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 61
-  m_fontSizeBase: 61
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -24908,8 +24908,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 440}
-  m_SizeDelta: {x: -60, y: -890}
+  m_AnchoredPosition: {x: 0, y: 445}
+  m_SizeDelta: {x: -70, y: -910}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1589652916
 MonoBehaviour:

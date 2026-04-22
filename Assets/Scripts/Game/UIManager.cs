@@ -10,10 +10,10 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance { get; private set; } //This is cool, basically this means the UI instance cant be set by anything else but itself but other scripts can get the values. TLDR: Read only file*/
-    public Text timerText;
-    public Text pointsText;
-    public Text objectivesText;
-    public Text riderScore;
+    public TMP_Text timerText;
+    public TMP_Text pointsText;
+    public TMP_Text objectivesText;
+    public TMP_Text riderScore;
     public float timeRemaining = 180;
     [SerializeField] private int points = 0;
     private string objectives = "Pick up CUSTOMERS to make BUXS!";
@@ -82,7 +82,7 @@ public class UIManager : MonoBehaviour
         pointsText.text = "BUXS: " + points.ToString();
 
         // Update Objectives
-        objectivesText.text = "Objectives: " + objectives;
+        objectivesText.text = objectives;
         //Debug.Log("Points: " + points);
     }
 
@@ -100,6 +100,12 @@ public class UIManager : MonoBehaviour
     public void SetObjectives(string newObjectives)
     {
         objectives = newObjectives;
+        UpdateUI();
+    }
+
+    public void ClearObjectives()
+    {
+        objectivesText.text = objectives;
         UpdateUI();
     }
 

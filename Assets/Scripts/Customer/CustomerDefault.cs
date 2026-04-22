@@ -69,7 +69,7 @@ public class CustomerDefault : MonoBehaviour
         {
             isPickedUp = false;
             transform.SetParent(null);
-            UIManager.instance.SetObjectives("Find a new customer to pick up"); //CHANGE THAT LOL
+            UIManager.instance.ClearObjectives();
             arrowController.ClearDestination(); // Clear the destination on the arrow
             //if (sphereRenderer != null) //Customer Sphere disappears when picked up
             //{
