@@ -35,7 +35,8 @@ public class CustomerManager : MonoBehaviour
         {
             Transform spawnPoint = spawnPoints[i];
             GameObject spawnedPrefab = Instantiate(interactSphere, spawnPoint.position, spawnPoint.rotation);
-            GameObject hectorPrefab = Instantiate(hector, spawnPoint.position, spawnPoint.rotation);
+            GameObject hectorPrefab = Instantiate(hector, new Vector3(spawnPoint.position.x, 1.1f,
+                spawnPoint.position.z), spawnPoint.rotation);
             spawnedInteract.Add(spawnedPrefab);
             spawnedHectors.Add(hectorPrefab);
             spawnedPrefab.transform.GetChild(0).GetComponent<CustomerInteract>().customerDefault = hectorPrefab.GetComponent<CustomerDefault>();

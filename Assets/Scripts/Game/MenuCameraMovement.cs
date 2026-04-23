@@ -12,6 +12,7 @@ public class MenuCameraMovement : MonoBehaviour
         _cameras[0].SetActive(false);
         _cameras[1].SetActive(true);
         _cameras[2].SetActive(false);
+        _cameras[3].SetActive(false);
     }
 
     public void StM()
@@ -19,6 +20,7 @@ public class MenuCameraMovement : MonoBehaviour
         _cameras[0].SetActive(true);
         _cameras[1].SetActive(false);
         _cameras[2].SetActive(false);
+        _cameras[3].SetActive(false);
     }
 
     public void MtC()
@@ -26,6 +28,7 @@ public class MenuCameraMovement : MonoBehaviour
         _cameras[0].SetActive(false);
         _cameras[1].SetActive(false);
         _cameras[2].SetActive(true);
+        _cameras[3].SetActive(false);
     }
 
     public void CtM()
@@ -33,5 +36,22 @@ public class MenuCameraMovement : MonoBehaviour
         _cameras[0].SetActive(true);
         _cameras[1].SetActive(false);
         _cameras[2].SetActive(false);
+        _cameras[3].SetActive(false);
+    }
+
+    public void MtT()
+    {
+        _cameras[0].SetActive(false);
+        _cameras[1].SetActive(false);
+        _cameras[2].SetActive(false);
+        _cameras[3].SetActive(true);
+    }
+
+    public void TtM()
+    {
+        _cameras[0].SetActive(true);
+        _cameras[1].SetActive(false);
+        _cameras[2].SetActive(false);
+        _cameras[3].SetActive(false);
     }
 }

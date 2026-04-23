@@ -105,7 +105,7 @@ public class UIManager : MonoBehaviour
 
     public void ClearObjectives()
     {
-        objectivesText.text = objectives;
+        objectives = "Pick up CUSTOMERS to make BUXS!";
         UpdateUI();
     }
 
