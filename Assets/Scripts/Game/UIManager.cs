@@ -20,6 +20,11 @@ public class UIManager : MonoBehaviour
     private GameObject InGameUI;
     private GameObject nameInput;
     public bool isGameOver = false;
+    public bool isGameStarted = false;
+    public int countdownTime;
+    public int endCountdown;
+    public TMP_Text countdownText;
+    [SerializeField] private GameObject player;
 
 
 
@@ -50,24 +55,30 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        UpdateUI();
         InGameUI = GameObject.Find("InGameUI");
         nameInput = GameObject.Find("NameInputField");
         nameInput.SetActive(false);
+        InGameUI.SetActive(false);
         Cursor.visible = enabled;
         Cursor.lockState = CursorLockMode.Confined;
+        player.gameObject.GetComponent<GoofyNewControls>().enabled = false;
+        StartCoroutine(CountDownStart());
+        UpdateUI();
     }
 
     void Update()
     {
-        if (timeRemaining >= 0)
+        if (isGameStarted == true)
         {
-            timeRemaining -= Time.deltaTime;
-            UpdateUI();
-        }
-        else
-        {
-            EndGame();
+            if (timeRemaining >= 0)
+            {
+                timeRemaining -= Time.deltaTime;
+                UpdateUI();
+            }
+            else
+            {
+                EndGame();
+            }
         }
     }
 
@@ -115,9 +126,47 @@ public class UIManager : MonoBehaviour
         //Debug.Log("Game Over!");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = enabled;
+        if (player != null)
+        {
+            var controls = player.GetComponent<GoofyNewControls>();
+            if (controls != null)
+            {
+                controls.StopMotor();
+            }
+        }
+        player.gameObject.GetComponent<GoofyNewControls>().enabled = false;
         InGameUI.SetActive(false);
+        countdownText.gameObject.SetActive(true);
+        StartCoroutine(EndCounter());
         nameInput.SetActive(true);
         //SceneManager.LoadScene("GameOverScene");
+    }
+
+    IEnumerator CountDownStart()
+    {
+        while (countdownTime > 0)
+        {
+            countdownText.text = countdownTime.ToString();
+            yield return new WaitForSeconds(1f);
+            countdownTime--;
+        }
+        countdownText.text = "GO";
+        isGameStarted = true;
+        player.gameObject.GetComponent<GoofyNewControls>().enabled = true;
+        yield return new WaitForSeconds(1f);
+        countdownText.gameObject.SetActive(false);
+        InGameUI.SetActive(true);
+    }
+
+    IEnumerator EndCounter()
+    {
+        while (endCountdown > 0)
+        {
+            countdownText.text = "GAME OVER";
+            yield return new WaitForSeconds(1f);
+            endCountdown--;
+        }
+        countdownText.gameObject.SetActive(false);
     }
 
     public void NameEntered()

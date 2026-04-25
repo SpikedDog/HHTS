@@ -22,13 +22,13 @@ public class GoofyNewControls : MonoBehaviour
     //float speedMpH;
 
     private float verticalInput;
-    private float gasInput;
-    private float brakeInput;
+    public float gasInput;
+    public float brakeInput;
     private float steeringInput;
     private float reverseInput;
 
     // Settings
-    [SerializeField] private float motorForce, brakeForce, maxSteerAngle;
+    [SerializeField] public float motorForce, brakeForce, maxSteerAngle;
 
     // Wheel Colliders
     [SerializeField] private WheelCollider wheelFL, wheelFR;
@@ -108,7 +108,7 @@ public class GoofyNewControls : MonoBehaviour
     {
         GetInput();
         HandleMotor();
-        UpdateWheels();
+        //UpdateWheels();
         currSpeed = MathF.Round(returnCurrentMPH());
         float curSteerAng = Mathf.Lerp(loSpeedAng, hiSpeedAng, currSpeed / maxSpeed);
         curSteerAng *= Input.GetAxis("Horizontal");
@@ -188,20 +188,28 @@ public class GoofyNewControls : MonoBehaviour
         return rb.velocity.magnitude * 2.237f;
     }
 
-    private void UpdateWheels()
+    public void StopMotor()
     {
-        UpdateSingleWheel(wheelFL, frontLeftWheelTransform);
-        UpdateSingleWheel(wheelFR, frontRightWheelTransform);
-        UpdateSingleWheel(wheelRR, rearRightWheelTransform);
-        UpdateSingleWheel(wheelRL, rearLeftWheelTransform);
+        brakeInput = 1;
+        gasInput = 0;
+        reverseInput = 0;
+        HandleMotor();
     }
 
-    private void UpdateSingleWheel(WheelCollider wheelCollider, Transform wheelTransform)
-    {
-        Vector3 pos;
-        Quaternion rot;
-        wheelCollider.GetWorldPose(out pos, out rot);
-        wheelTransform.rotation = rot;
-        wheelTransform.position = pos;
-    }
+    //private void UpdateWheels()
+    //{
+    //    UpdateSingleWheel(wheelFL, frontLeftWheelTransform);
+    //    UpdateSingleWheel(wheelFR, frontRightWheelTransform);
+    //    UpdateSingleWheel(wheelRR, rearRightWheelTransform);
+    //    UpdateSingleWheel(wheelRL, rearLeftWheelTransform);
+    //}
+
+    //private void UpdateSingleWheel(WheelCollider wheelCollider, Transform wheelTransform)
+    //{
+    //    Vector3 pos;
+    //    Quaternion rot;
+    //    wheelCollider.GetWorldPose(out pos, out rot);
+    //    wheelTransform.rotation = rot;
+    //    wheelTransform.position = pos;
+    //}
 }
