@@ -21,29 +21,38 @@ public class HighScoreTable : MonoBehaviour
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         HighScores highScores = JsonUtility.FromJson<HighScores>(jsonString);
 
-        // Sort the high score entries by score in descending order
-        for (int i = 0; i < highScores.highScoreEntryList.Count; i++)
+        if (highScores == null)
         {
-            for (int j = i + 1; j < highScores.highScoreEntryList.Count; j++)
-            {
-                if (highScores.highScoreEntryList[j].score > highScores.highScoreEntryList[i].score)
-                {
-                    // Swap the entries
-                    HighScoreEntry temp = highScores.highScoreEntryList[i];
-                    highScores.highScoreEntryList[i] = highScores.highScoreEntryList[j];
-                    highScores.highScoreEntryList[j] = temp;
-                }
-            }
+            // There's no stored table, initialize
+            highScores = new HighScores();
+            highScores.highScoreEntryList = new List<HighScoreEntry>();
+            highScores.highScoreEntryList.Add(new HighScoreEntry { name = "HEC", score = 250 });
         }
 
+        highScores.highScoreEntryList.Sort((a, b) => b.score - a.score);
+        //// Sort the high score entries by score in descending order
+        //for (int i = 0; i < highScores.highScoreEntryList.Count; i++)
+        //{
+        //    for (int j = i + 1; j < highScores.highScoreEntryList.Count; j++)
+        //    {
+        //        if (highScores.highScoreEntryList[j].score > highScores.highScoreEntryList[i].score)
+        //        {
+        //            // Swap the entries
+        //            HighScoreEntry temp = highScores.highScoreEntryList[i];
+        //            highScores.highScoreEntryList[i] = highScores.highScoreEntryList[j];
+        //            highScores.highScoreEntryList[j] = temp;
+        //        }
+        //    }
+        //}
+
         //Keeps only the top 10 scores
-        if (highScores.highScoreEntryList.Count > 10)
-        {
-            for (int h = highScores.highScoreEntryList.Count; h > 10; h--)
-            {
-                highScores.highScoreEntryList.RemoveAt(10);
-            }
-        }
+        //if (highScores.highScoreEntryList.Count > 10)
+        //{
+        //    for (int h = highScores.highScoreEntryList.Count; h > 10; h--)
+        //    {
+        //        highScores.highScoreEntryList.RemoveAt(10);
+        //    }
+        //}
 
         highScoreEntryTransformList = new List<Transform>();
         foreach (HighScoreEntry highscoreEntry in highScores.highScoreEntryList)
@@ -129,7 +138,7 @@ public class HighScoreTable : MonoBehaviour
         transformList.Add(entryTransform);
     }
 
-    private void AddHighScoreEntry(int score, string name)
+    public static void AddHighScoreEntry(int score, string name)
     {
         // Create high score entry
         HighScoreEntry highScoreEntry = new HighScoreEntry { score = score, name = name };
@@ -138,21 +147,20 @@ public class HighScoreTable : MonoBehaviour
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         HighScores highScores = JsonUtility.FromJson<HighScores>(jsonString);
 
-        //if (highScores.highScoreEntryList == null)
-        //{
-        //    highScores.highScoreEntryList = new List<HighScoreEntry>();
-        //}
+        if (highScores == null)
+        {
+            highScores = new HighScores();
+            highScores.highScoreEntryList = new List<HighScoreEntry>();
+        }
 
         // Add new entry to high score list
         highScores.highScoreEntryList.Add(highScoreEntry);
+        highScores.highScoreEntryList.Sort((a, b) => b.score - a.score);
 
         //Keeps only the top 10 scores
         if (highScores.highScoreEntryList.Count > 10)
         {
-            for (int h = highScores.highScoreEntryList.Count; h > 10; h--)
-            {
-                highScores.highScoreEntryList.RemoveAt(10);
-            }
+            highScores.highScoreEntryList.RemoveRange(10, highScores.highScoreEntryList.Count - 10);
         }
 
         // Save updated high scores

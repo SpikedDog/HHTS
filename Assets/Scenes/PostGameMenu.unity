@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 1291841}
   - component: {fileID: 1291840}
   - component: {fileID: 1291839}
+  - component: {fileID: 1291842}
   m_Layer: 5
   m_Name: ContinueButton
   m_TagString: Untagged
@@ -205,9 +206,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 878623343}
-        m_TargetAssemblyTypeName: UIManagerMenu, Assembly-CSharp
-        m_MethodName: BackToMenu
+      - m_Target: {fileID: 1291842}
+        m_TargetAssemblyTypeName: BackToMenu, Assembly-CSharp
+        m_MethodName: GoBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -255,6 +256,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291837}
   m_CullTransparentMesh: 1
+--- !u!114 &1291842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c74e252e8668b3841a97966d386829cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &39978741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,7 +1587,7 @@ MonoBehaviour:
   scene:
     m_Handle: 0
   pointsTransfer: 0
-  nameTransfer: 
+  nameTransfer: {fileID: 0}
 --- !u!224 &878623344
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1792,10 +1805,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2300,8 +2313,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.8703003, y: -1.3364983}
-  m_SizeDelta: {x: 1898.334, y: 1083.7999}
+  m_AnchoredPosition: {x: 171.1932, y: -21.5305}
+  m_SizeDelta: {x: 5394.798, y: 2762.795}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1225222045
 MonoBehaviour:

@@ -13,7 +13,7 @@ public class UIManagerMenu : MonoBehaviour
     private GameObject InGameUI;
     public Scene scene;
     public int pointsTransfer;
-    public string nameTransfer;
+    public TMP_Text nameTransfer;
 
     void Awake()
     {
@@ -45,13 +45,14 @@ public class UIManagerMenu : MonoBehaviour
         if (scene.name == "MainMenuNew")
         {
             pointsTransfer = 0;
-            nameTransfer = "";
+            nameTransfer.text = "";
         }
     }
 
     public void DataTransfer()
     {
         SceneManager.LoadScene(2);
+        Debug.Log("Loading Scene 2");
     }
 
     public void BackToMenu()

@@ -60,6 +60,7 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
+        menuManager = UIManagerMenu.instance.gameObject;
         InGameUI = GameObject.Find("InGameUI");
         nameInput = GameObject.Find("NameInputField");
         nameInput.SetActive(false);
@@ -190,11 +191,12 @@ public class UIManager : MonoBehaviour
     {
         if (menuManager != null)
         {
-            menuManager.GetComponent<UIManagerMenu>().pointsTransfer = score;
-            Debug.Log("Score transferred: " + menuManager.GetComponent<UIManagerMenu>().pointsTransfer);
-            Debug.Log("Name entered: " + name.text);
-            menuManager.GetComponent<UIManagerMenu>().nameTransfer = name.text;
-            Debug.Log("Name transferred: " + menuManager.GetComponent<UIManagerMenu>().nameTransfer);
+            HighScoreTable.AddHighScoreEntry(score, name.text);
+            //menuManager.GetComponent<UIManagerMenu>().pointsTransfer = score;
+            //Debug.Log("Score transferred: " + menuManager.GetComponent<UIManagerMenu>().pointsTransfer);
+            //Debug.Log("Name entered: " + name.text);
+            //menuManager.GetComponent<UIManagerMenu>().nameTransfer.text = name.text;
+            //Debug.Log("Name transferred: " + menuManager.GetComponent<UIManagerMenu>().nameTransfer);
             UIManagerMenu.instance.DataTransfer();
         }
     }

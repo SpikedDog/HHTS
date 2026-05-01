@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            instance.RefreshDestinatons();
+            instance.Start();
         }
         if (GameManager.instance == null)
         {
@@ -35,6 +37,11 @@ public class GameManager : MonoBehaviour
         {
             destination.SetActive(false);
         }
+    }
+
+    private void RefreshDestinatons()
+    {
+        destinations = new List<Destination>(FindObjectsByType<Destination>(FindObjectsInactive.Include, FindObjectsSortMode.None)).ConvertAll<GameObject>(destination => destination.gameObject).ToArray();
     }
 
     public Transform GetValidDestination(Vector3 customerPosition, float minDistance = 40f)
