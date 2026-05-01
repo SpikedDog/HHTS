@@ -16450,7 +16450,7 @@ MonoBehaviour:
   pointsText: {fileID: 1241138052}
   objectivesText: {fileID: 15427192}
   riderScore: {fileID: 1136301975}
-  timeRemaining: 30
+  timeRemaining: 180
   points: 0
   nameInputText: {fileID: 2133593966}
   totalText: {fileID: 762889562}
@@ -31246,7 +31246,7 @@ MonoBehaviour:
   scene:
     m_Handle: 0
   pointsTransfer: 0
-  nameTransfer: 
+  nameTransfer: {fileID: 0}
 --- !u!224 &1995876279
 RectTransform:
   m_ObjectHideFlags: 0
