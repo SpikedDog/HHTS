@@ -11,6 +11,9 @@ public class UIManagerMenu : MonoBehaviour
 {
     public static UIManagerMenu instance { get; private set; } //This is cool, basically this means the UI instance cant be set by anything else but itself but other scripts can get the values. TLDR: Read only file*/
     private GameObject InGameUI;
+    public Scene scene;
+    public int pointsTransfer;
+    public string nameTransfer;
 
     void Awake()
     {
@@ -21,18 +24,38 @@ public class UIManagerMenu : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(this.gameObject);
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
+        scene = SceneManager.GetActiveScene();
     }
 
     void Start()
     {
-        InGameUI = GameObject.Find("InGameUI");
-        Cursor.visible = enabled;
-        Cursor.lockState = CursorLockMode.Confined;
+        if (scene.name == "MainMenuNew" || scene.name == "PostGameMenu")
+        {
+            InGameUI = GameObject.Find("InGameUI");
+            Cursor.visible = enabled;
+            Cursor.lockState = CursorLockMode.Confined;
+        }
+
+        if (scene.name == "MainMenuNew")
+        {
+            pointsTransfer = 0;
+            nameTransfer = "";
+        }
+    }
+
+    public void DataTransfer()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

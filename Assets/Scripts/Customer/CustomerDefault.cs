@@ -48,7 +48,7 @@ public class CustomerDefault : MonoBehaviour
             
             //gameObject.GetComponent<MeshRenderer>().enabled = false; //CHANGE WHEN ANIMATION IS MADE!!
             currentDestination.gameObject.SetActive(true);
-            UIManager.instance.SetObjectives("Take customer to the destination: " + currentDestination.name);
+            uiManager.SetObjectives("Take customer to the destination: " + currentDestination.name);
             arrowController.SetDestination(currentDestination); // Sets the destination on the arrow
             //if (sphereRenderer != null)
             //{
@@ -69,7 +69,7 @@ public class CustomerDefault : MonoBehaviour
         {
             isPickedUp = false;
             transform.SetParent(null);
-            UIManager.instance.ClearObjectives();
+            uiManager.ClearObjectives();
             arrowController.ClearDestination(); // Clear the destination on the arrow
             //if (sphereRenderer != null) //Customer Sphere disappears when picked up
             //{

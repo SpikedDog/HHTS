@@ -20176,7 +20176,7 @@ GameObject:
   - component: {fileID: 1090059233}
   - component: {fileID: 1090059234}
   m_Layer: 5
-  m_Name: UIManager
+  m_Name: MenuManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20213,6 +20213,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c471f7b57d0540a48b3a691f5ab963f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene:
+    m_Handle: 0
+  pointsTransfer: 0
+  nameTransfer: 
 --- !u!1 &1093201973
 GameObject:
   m_ObjectHideFlags: 0

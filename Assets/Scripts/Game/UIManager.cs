@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Scripting.APIUpdating;
 using UnityEngine.UI;
+using static UIManagerMenu;
 
 public class UIManager : MonoBehaviour
 {
@@ -19,19 +20,22 @@ public class UIManager : MonoBehaviour
     private string objectives = "Pick up CUSTOMERS to make BUXS!";
     private GameObject InGameUI;
     private GameObject nameInput;
+    public GameObject nameInputText;
+    public TMP_Text totalText;
+    public TMP_Text nameInputted;
+    public GameObject background;
     public bool isGameOver = false;
     public bool isGameStarted = false;
     public int countdownTime;
     public int endCountdown;
     public TMP_Text countdownText;
+    public GameObject menuManager;
     [SerializeField] private GameObject player;
 
 
 
     [Header("Leaderboard Attributes")]
-    List<GameObject> LeaderboardNumberObjects;
-    [SerializeField] GameObject leaderboardScorePrefab;
-    [SerializeField] GameObject leaderboardGridLayout;
+    
     [SerializeField] TMP_InputField nameInputField;
 
 
@@ -42,15 +46,16 @@ public class UIManager : MonoBehaviour
         //{
         //    Debug.LogError("UIManager instance is null.");
         //}
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+
+        //if (instance == null)
+        //{
+        //    instance = this;
+        //    DontDestroyOnLoad(gameObject);
+        //}
+        //else
+        //{
+        //    Destroy(gameObject);
+        //}
     }
 
     void Start()
@@ -58,7 +63,10 @@ public class UIManager : MonoBehaviour
         InGameUI = GameObject.Find("InGameUI");
         nameInput = GameObject.Find("NameInputField");
         nameInput.SetActive(false);
+        nameInputText.SetActive(false);
+        totalText.gameObject.SetActive(false);
         InGameUI.SetActive(false);
+        background.SetActive(false);
         Cursor.visible = enabled;
         Cursor.lockState = CursorLockMode.Confined;
         player.gameObject.GetComponent<GoofyNewControls>().enabled = false;
@@ -138,7 +146,6 @@ public class UIManager : MonoBehaviour
         InGameUI.SetActive(false);
         countdownText.gameObject.SetActive(true);
         StartCoroutine(EndCounter());
-        nameInput.SetActive(true);
         //SceneManager.LoadScene("GameOverScene");
     }
 
@@ -163,88 +170,32 @@ public class UIManager : MonoBehaviour
         while (endCountdown > 0)
         {
             countdownText.text = "GAME OVER";
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(3f);
             endCountdown--;
         }
         countdownText.gameObject.SetActive(false);
+        background.SetActive(true);
+        nameInput.SetActive(true);
+        nameInputText.SetActive(true);
+        totalText.text = "Total BUXS: " + points.ToString();
+        totalText.gameObject.SetActive(true);
     }
 
     public void NameEntered()
     {
-        AddToLeaderboard(points, nameInputField.text);
+        AddToLeaderboard(points, nameInputted);
     }
 
-    public void AddToLeaderboard(int score, string name)
+    public void AddToLeaderboard(int score, TMP_Text name)
     {
-        int amountOfScores = PlayerPrefs.GetInt("LeaderboardAmount", 0);
-        bool scoreBeaten = false;
-        int scoreBeatenPoint = 0;
-        List<int> scores = new();
-        List<string> names = new();
-        for (int i = 0; i < amountOfScores+1; i++)
+        if (menuManager != null)
         {
-            if (i < 11)
-            {
-                if (!scoreBeaten)
-                {
-                    int heldScore = PlayerPrefs.GetInt("Pos" + i + "Score", 0);
-                    if (heldScore < score)
-                    {
-                        scoreBeaten = true;
-                        scoreBeatenPoint = i;
-                    }
-                }
-                else
-                {
-                    scores.Add(PlayerPrefs.GetInt("Pos" + (i-1) + "Score", 0));
-                    names.Add(PlayerPrefs.GetString("Pos" + (i-1) + "Name", "AAA"));
-                }
-            }
-            else
-            {
-                scoreBeatenPoint = 100;
-            }
-        }
-        PlayerPrefs.SetInt("LeaderboardAmount", amountOfScores < 10 ? amountOfScores + 1 : amountOfScores);
-        if (scoreBeatenPoint == 0)
-        {
-            if (PlayerPrefs.GetInt("Pos0Score") < score)
-            {
-                PlayerPrefs.SetInt("Pos" + (float)scoreBeatenPoint + "Score", score);
-                PlayerPrefs.SetString("Pos" + (float)scoreBeatenPoint + "Name", name);
-            }
-        }
-        else
-        {
-            PlayerPrefs.SetInt("Pos" + (float)scoreBeatenPoint + "Score", score);
-            PlayerPrefs.SetString("Pos" + (float)scoreBeatenPoint + "Name", name);
-        }
-          
-        int index = 0;
-        foreach (var oldScore in scores)
-        {
-            scoreBeatenPoint++;
-            PlayerPrefs.SetInt("Pos" + (float)scoreBeatenPoint + "Score", oldScore);
-            PlayerPrefs.SetString("Pos" + (float)scoreBeatenPoint + "Name", names[index]);
-            index++;
-        }
-        LoadLeaderboard();
-    }
-
-    public void LoadLeaderboard()
-    {
-        LeaderboardPositionTextSetter[] children = leaderboardGridLayout.GetComponentsInChildren<LeaderboardPositionTextSetter>();
-        foreach(var child in children)
-        {
-            Destroy(child.transform.gameObject);
-        }
-        int amountOfScores = PlayerPrefs.GetInt("LeaderboardAmount", 0);
-        Debug.Log(amountOfScores);
-        for (int i = 0; i < amountOfScores; i++)
-        {
-            var nextScore = Instantiate(leaderboardScorePrefab, leaderboardGridLayout.transform);
-            nextScore.GetComponent<LeaderboardPositionTextSetter>().UpdateText(i+1 + ": "+PlayerPrefs.GetString("Pos"+(float)i+"Name","NAME"),PlayerPrefs.GetInt("Pos"+i+"Score",0));
+            menuManager.GetComponent<UIManagerMenu>().pointsTransfer = score;
+            Debug.Log("Score transferred: " + menuManager.GetComponent<UIManagerMenu>().pointsTransfer);
+            Debug.Log("Name entered: " + name.text);
+            menuManager.GetComponent<UIManagerMenu>().nameTransfer = name.text;
+            Debug.Log("Name transferred: " + menuManager.GetComponent<UIManagerMenu>().nameTransfer);
+            UIManagerMenu.instance.DataTransfer();
         }
     }
-
 }

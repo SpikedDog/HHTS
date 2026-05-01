@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UIManager;
+using static UIManagerMenu;
 
 public class HighScoreTable : MonoBehaviour
 {
     private Transform entryContainer;
     private Transform entryTemplate;
-    //private List<HighScoreEntry> highScoreEntryList;
     private List<Transform> highScoreEntryTransformList;
 
     private void Awake()
@@ -35,6 +36,15 @@ public class HighScoreTable : MonoBehaviour
             }
         }
 
+        //Keeps only the top 10 scores
+        if (highScores.highScoreEntryList.Count > 10)
+        {
+            for (int h = highScores.highScoreEntryList.Count; h > 10; h--)
+            {
+                highScores.highScoreEntryList.RemoveAt(10);
+            }
+        }
+
         highScoreEntryTransformList = new List<Transform>();
         foreach (HighScoreEntry highscoreEntry in highScores.highScoreEntryList)
         {
@@ -42,7 +52,7 @@ public class HighScoreTable : MonoBehaviour
         }
     }
 
-    private void CreateHighScoreEntry(HighScoreEntry highscoreEntry, Transform container, List<Transform> transformList)  /*(int score, string name, Transform container, Transform template)*/
+    private void CreateHighScoreEntry(HighScoreEntry highscoreEntry, Transform container, List<Transform> transformList)
     {
         float templateHeight = 67f;
         Transform entryTransform = Instantiate(entryTemplate, entryContainer);
@@ -80,14 +90,6 @@ public class HighScoreTable : MonoBehaviour
         entryTransform.Find("ScoreText").GetComponent<TMPro.TextMeshProUGUI>().text = score.ToString();
 
         entryTransform.Find("Background").gameObject.SetActive(rank % 2 == 1);
-
-        //if (rank == 1)
-        //{
-        //    // Highlight the top score entry
-        //    entryTransform.Find("PosText").GetComponent<TMPro.TextMeshProUGUI>().color = Color.yellow;
-        //    entryTransform.Find("NameText").GetComponent<TMPro.TextMeshProUGUI>().color = Color.yellow;
-        //    entryTransform.Find("ScoreText").GetComponent<TMPro.TextMeshProUGUI>().color = Color.yellow;
-        //}
 
         switch (rank)
         {
@@ -143,6 +145,15 @@ public class HighScoreTable : MonoBehaviour
 
         // Add new entry to high score list
         highScores.highScoreEntryList.Add(highScoreEntry);
+
+        //Keeps only the top 10 scores
+        if (highScores.highScoreEntryList.Count > 10)
+        {
+            for (int h = highScores.highScoreEntryList.Count; h > 10; h--)
+            {
+                highScores.highScoreEntryList.RemoveAt(10);
+            }
+        }
 
         // Save updated high scores
         string json = JsonUtility.ToJson(highScores);
