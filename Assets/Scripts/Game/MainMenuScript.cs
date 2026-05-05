@@ -7,8 +7,11 @@ using UnityEngine.UI;
 
 public class MainMenuScript : MonoBehaviour
 {
-    public AudioMixer audioMixer;
-    public TMPro.TMP_Dropdown resolutionDropdown;
+    [SerializeField] private AudioMixer audioMixer;
+    [SerializeField] private TMPro.TMP_Dropdown resolutionDropdown;
+    [SerializeField] private Slider volumeSlider;
+    [SerializeField] private Slider musicSlider;
+    [SerializeField] private Slider sfxSlider;
 
     Resolution[] resolutions;
 
@@ -32,6 +35,16 @@ public class MainMenuScript : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+        if (PlayerPrefs.HasKey("Volume") || PlayerPrefs.HasKey("Music") || PlayerPrefs.HasKey("SFX"))
+        {
+            LoadVolumeSettings();
+        }
+        else
+        {
+            SetMusicVolume();
+            SetVolume();
+            SetSFXVolume();
+        }
     }
 
     public void SetResolution(int resolutionIndex)
@@ -40,10 +53,36 @@ public class MainMenuScript : MonoBehaviour
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 
-    public void SetVolume(float volume)
+    public void SetVolume()
     {
-        Debug.Log("Volume set to: " + volume);
+        float volume = volumeSlider.value;
         audioMixer.SetFloat("Volume", volume);
+        PlayerPrefs.SetFloat("Volume", volume);
+    }
+
+    public void SetMusicVolume()
+    {
+        float music = musicSlider.value;
+        audioMixer.SetFloat("Music", music);
+        PlayerPrefs.SetFloat("Music", music);
+    }
+
+    public void SetSFXVolume()
+    {
+        float sfx = sfxSlider.value;
+        audioMixer.SetFloat("SFX", sfx);
+        PlayerPrefs.SetFloat("SFX", sfx);
+    }
+
+    private void LoadVolumeSettings()
+    {
+        volumeSlider.value = PlayerPrefs.GetFloat("Volume");
+        musicSlider.value = PlayerPrefs.GetFloat("Music");
+        sfxSlider.value = PlayerPrefs.GetFloat("SFX");
+        
+        SetVolume();
+        SetMusicVolume();
+        SetSFXVolume();
     }
 
     public void SetQuality(int qualityIndex)
