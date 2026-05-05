@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
 
     [Header("Audio Clips")]
     public AudioClip music;
+    public AudioClip engineSound;
 
     private void Start()
     {

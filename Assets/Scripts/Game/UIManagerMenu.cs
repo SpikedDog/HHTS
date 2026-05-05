@@ -45,7 +45,10 @@ public class UIManagerMenu : MonoBehaviour
         if (scene.name == "MainMenuNew")
         {
             pointsTransfer = 0;
-            nameTransfer.text = "";
+            if (nameTransfer != null)
+            {
+                nameTransfer.text = "";
+            }
         }
     }
 
