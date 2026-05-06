@@ -16450,7 +16450,7 @@ MonoBehaviour:
   pointsText: {fileID: 1241138052}
   objectivesText: {fileID: 15427192}
   riderScore: {fileID: 1136301975}
-  timeRemaining: 180
+  timeRemaining: 30
   points: 0
   nameInputText: {fileID: 2133593966}
   totalText: {fileID: 762889562}
@@ -37293,7 +37293,7 @@ MonoBehaviour:
   minPitch: 0.6
   maxPitch: 1.5
   maxSpeed: 100
-  engineSound: {fileID: 8300000, guid: 0a503f7ccfeb7e04a84d16d09966e422, type: 3}
+  engineSound: {fileID: 8300000, guid: d4f7a526252de8e45a0db510127615ad, type: 3}
   hitSound: {fileID: 8300000, guid: 26c9c2f5a99ec91428912acd696b83dd, type: 3}
   audioPitch: 1
 --- !u!82 &6588881394108200581

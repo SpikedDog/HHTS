@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class MyCarSound : MonoBehaviour
 {
-    [SerializeField] float minPitch = 0.6f;
+    [SerializeField] float minPitch = 0.4f;
     [SerializeField] float maxPitch = 1.5f;
-    [SerializeField] float maxSpeed = 85f;
+    [SerializeField] float maxSpeed = 70f;
 
     [SerializeField] AudioClip engineSound;
     [SerializeField] AudioClip hitSound;

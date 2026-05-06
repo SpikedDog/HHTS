@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
     [Header("Audio Clips")]
     public AudioClip music;
     public AudioClip engineSound;
+    public AudioClip clickSound;
 
     private void Start()
     {
