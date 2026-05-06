@@ -1212,7 +1212,7 @@ GameObject:
   - component: {fileID: 103091388}
   m_Layer: 0
   m_Name: building-skyscraper-d (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1432,7 +1432,7 @@ GameObject:
   - component: {fileID: 133558080}
   m_Layer: 0
   m_Name: low-detail-building-k (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2709,7 +2709,7 @@ GameObject:
   - component: {fileID: 253926977}
   m_Layer: 0
   m_Name: detail-parasol-a (6)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2816,7 +2816,7 @@ GameObject:
   - component: {fileID: 257595923}
   m_Layer: 0
   m_Name: low-detail-building-wide-a (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3575,7 +3575,7 @@ GameObject:
   - component: {fileID: 323217150}
   m_Layer: 0
   m_Name: building-skyscraper-c (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4490,7 +4490,7 @@ GameObject:
   - component: {fileID: 366418402}
   m_Layer: 0
   m_Name: low-detail-building-g (3)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5089,7 +5089,7 @@ GameObject:
   - component: {fileID: 389758074}
   m_Layer: 0
   m_Name: building-j (4)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5298,7 +5298,7 @@ GameObject:
   - component: {fileID: 391470916}
   m_Layer: 0
   m_Name: building-skyscraper-c (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5404,7 +5404,7 @@ GameObject:
   - component: {fileID: 399752775}
   m_Layer: 0
   m_Name: low-detail-building-g (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5835,7 +5835,7 @@ GameObject:
   - component: {fileID: 439984931}
   m_Layer: 0
   m_Name: building-m (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7134,7 +7134,7 @@ GameObject:
   - component: {fileID: 519955222}
   m_Layer: 0
   m_Name: low-detail-building-wide-a (3)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7312,7 +7312,7 @@ GameObject:
   - component: {fileID: 532290020}
   m_Layer: 0
   m_Name: building-skyscraper-d (4)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7533,7 +7533,7 @@ GameObject:
   - component: {fileID: 552371351}
   m_Layer: 0
   m_Name: low-detail-building-g (5)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7754,7 +7754,7 @@ GameObject:
   - component: {fileID: 570056250}
   m_Layer: 0
   m_Name: building-i (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7963,7 +7963,7 @@ GameObject:
   - component: {fileID: 576093208}
   m_Layer: 0
   m_Name: building-m (4)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9228,7 +9228,7 @@ GameObject:
   - component: {fileID: 653630243}
   m_Layer: 0
   m_Name: detail-parasol-a (9)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9821,7 +9821,7 @@ GameObject:
   - component: {fileID: 692452689}
   m_Layer: 0
   m_Name: building-n (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11043,7 +11043,7 @@ GameObject:
   - component: {fileID: 756197830}
   m_Layer: 0
   m_Name: detail-parasol-a (3)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11430,7 +11430,7 @@ GameObject:
   - component: {fileID: 767543396}
   m_Layer: 0
   m_Name: building-skyscraper-c (3)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11805,7 +11805,7 @@ GameObject:
   - component: {fileID: 797336578}
   m_Layer: 0
   m_Name: building-skyscraper-d (6)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12609,7 +12609,7 @@ GameObject:
   - component: {fileID: 830504489}
   m_Layer: 0
   m_Name: building-j (6)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12936,7 +12936,7 @@ GameObject:
   - component: {fileID: 836230423}
   m_Layer: 0
   m_Name: building-k (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13737,7 +13737,7 @@ GameObject:
   - component: {fileID: 905918870}
   m_Layer: 0
   m_Name: building-skyscraper-d (5)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14085,7 +14085,7 @@ GameObject:
   - component: {fileID: 931062247}
   m_Layer: 0
   m_Name: building-skyscraper-e (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14837,7 +14837,7 @@ GameObject:
   - component: {fileID: 968468541}
   m_Layer: 0
   m_Name: low-detail-building-k (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15568,7 +15568,7 @@ GameObject:
   - component: {fileID: 1038272699}
   m_Layer: 0
   m_Name: low-detail-building-g (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15674,7 +15674,7 @@ GameObject:
   - component: {fileID: 1039399997}
   m_Layer: 0
   m_Name: detail-parasol-a (5)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15896,7 +15896,7 @@ GameObject:
   - component: {fileID: 1050921979}
   m_Layer: 0
   m_Name: building-m (3)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16478,7 +16478,7 @@ GameObject:
   - component: {fileID: 1112133399}
   m_Layer: 0
   m_Name: detail-parasol-a (12)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16657,7 +16657,7 @@ GameObject:
   - component: {fileID: 1114030123}
   m_Layer: 0
   m_Name: low-detail-building-wide-a (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17949,7 +17949,7 @@ GameObject:
   - component: {fileID: 1167296440}
   m_Layer: 0
   m_Name: detail-parasol-a (8)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18276,7 +18276,7 @@ GameObject:
   - component: {fileID: 1179983811}
   m_Layer: 0
   m_Name: detail-awning-wide (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19546,7 +19546,7 @@ GameObject:
   - component: {fileID: 1244611688}
   m_Layer: 0
   m_Name: building-i (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20670,7 +20670,7 @@ GameObject:
   - component: {fileID: 1319682840}
   m_Layer: 0
   m_Name: building-j (3)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22969,7 +22969,7 @@ GameObject:
   - component: {fileID: 1456803174}
   m_Layer: 0
   m_Name: detail-parasol-a (4)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25230,7 +25230,7 @@ GameObject:
   - component: {fileID: 1590316651}
   m_Layer: 0
   m_Name: building-m (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26085,7 +26085,7 @@ GameObject:
   - component: {fileID: 1644613665}
   m_Layer: 0
   m_Name: low-detail-building-e (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26504,7 +26504,7 @@ GameObject:
   - component: {fileID: 1679173257}
   m_Layer: 0
   m_Name: detail-parasol-a (7)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27246,7 +27246,7 @@ GameObject:
   - component: {fileID: 1727523189}
   m_Layer: 0
   m_Name: building-j (7)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27466,7 +27466,7 @@ GameObject:
   - component: {fileID: 1728021646}
   m_Layer: 0
   m_Name: building-k (4)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28152,7 +28152,7 @@ GameObject:
   - component: {fileID: 1791122246}
   m_Layer: 0
   m_Name: building-j (8)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28905,7 +28905,7 @@ GameObject:
   - component: {fileID: 1847411199}
   m_Layer: 0
   m_Name: building-j (5)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29402,7 +29402,7 @@ GameObject:
   - component: {fileID: 1856945220}
   m_Layer: 0
   m_Name: building-skyscraper-d (3)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30010,7 +30010,7 @@ GameObject:
   - component: {fileID: 1899235577}
   m_Layer: 0
   m_Name: detail-parasol-a (13)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30826,7 +30826,7 @@ GameObject:
   - component: {fileID: 1955098638}
   m_Layer: 0
   m_Name: low-detail-building-g (4)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31034,7 +31034,7 @@ GameObject:
   - component: {fileID: 1966024222}
   m_Layer: 0
   m_Name: detail-parasol-a (11)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31672,7 +31672,7 @@ GameObject:
   - component: {fileID: 2002208398}
   m_Layer: 0
   m_Name: detail-parasol-a (10)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32207,7 +32207,7 @@ GameObject:
   - component: {fileID: 2019922177}
   m_Layer: 0
   m_Name: building-k (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32924,7 +32924,7 @@ GameObject:
   - component: {fileID: 2099804351}
   m_Layer: 0
   m_Name: building-k (3)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33595,7 +33595,7 @@ GameObject:
   - component: {fileID: 4362291160939083772}
   m_Layer: 0
   m_Name: building-h (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33657,7 +33657,7 @@ GameObject:
   - component: {fileID: 4098861834852210326}
   m_Layer: 0
   m_Name: building-skyscraper-d
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34044,7 +34044,7 @@ GameObject:
   - component: {fileID: 4011568446600202510}
   m_Layer: 0
   m_Name: building-m
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34067,7 +34067,7 @@ GameObject:
   - component: {fileID: 3469287838021549867}
   m_Layer: 0
   m_Name: building-n
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34086,7 +34086,7 @@ GameObject:
   - component: {fileID: 1668765616}
   m_Layer: 0
   m_Name: low-detail-building-e (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34105,7 +34105,7 @@ GameObject:
   - component: {fileID: 3469287837933812858}
   m_Layer: 0
   m_Name: building-skyscraper-d
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34124,7 +34124,7 @@ GameObject:
   - component: {fileID: 3469287837926516300}
   m_Layer: 0
   m_Name: building-skyscraper-d (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34143,7 +34143,7 @@ GameObject:
   - component: {fileID: 3469287837838886742}
   m_Layer: 0
   m_Name: detail-parasol-a
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34165,7 +34165,7 @@ GameObject:
   - component: {fileID: 3469287837749599872}
   m_Layer: 0
   m_Name: building-h (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34184,7 +34184,7 @@ GameObject:
   - component: {fileID: 3469287838616233676}
   m_Layer: 0
   m_Name: building-i
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34221,7 +34221,7 @@ GameObject:
   - component: {fileID: 1711813854453197821}
   m_Layer: 0
   m_Name: low-detail-building-k
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34239,7 +34239,7 @@ GameObject:
   - component: {fileID: 1711813856153491454}
   m_Layer: 0
   m_Name: low-detail-building-n
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34258,7 +34258,7 @@ GameObject:
   - component: {fileID: 3469287836851052251}
   m_Layer: 0
   m_Name: detail-parasol-a (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34277,7 +34277,7 @@ GameObject:
   - component: {fileID: 875405602}
   m_Layer: 0
   m_Name: low-detail-building-e
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34296,7 +34296,7 @@ GameObject:
   - component: {fileID: 3469287836780820498}
   m_Layer: 0
   m_Name: low-detail-building-g
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34315,7 +34315,7 @@ GameObject:
   - component: {fileID: 3469287836787506040}
   m_Layer: 0
   m_Name: building-k
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34355,7 +34355,7 @@ GameObject:
   - component: {fileID: 340306385}
   m_Layer: 0
   m_Name: building-j (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34373,7 +34373,7 @@ GameObject:
   - component: {fileID: 1711813855783988028}
   m_Layer: 0
   m_Name: building-skyscraper-a
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34392,7 +34392,7 @@ GameObject:
   - component: {fileID: 3469287837360336450}
   m_Layer: 0
   m_Name: detail-parasol-a (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34410,7 +34410,7 @@ GameObject:
   - component: {fileID: 1711813855725444436}
   m_Layer: 0
   m_Name: building-skyscraper-a (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34431,7 +34431,7 @@ GameObject:
   - component: {fileID: 1075046669}
   m_Layer: 0
   m_Name: building-j (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34607,7 +34607,7 @@ GameObject:
   - component: {fileID: 3093475111157656130}
   m_Layer: 0
   m_Name: building-skyscraper-a
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35487,7 +35487,7 @@ GameObject:
   - component: {fileID: 2800585383321866774}
   m_Layer: 0
   m_Name: detail-awning-wide (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35572,7 +35572,7 @@ GameObject:
   - component: {fileID: 2425966400844028835}
   m_Layer: 0
   m_Name: low-detail-building-wide-b
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35943,7 +35943,7 @@ GameObject:
   - component: {fileID: 3821285681401450166}
   m_Layer: 0
   m_Name: building-skyscraper-c
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36911,7 +36911,7 @@ GameObject:
   - component: {fileID: 8653703198620615110}
   m_Layer: 0
   m_Name: low-detail-building-wide-a
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37041,7 +37041,7 @@ GameObject:
   - component: {fileID: 7488890475810445732}
   m_Layer: 0
   m_Name: building-skyscraper-b
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37290,9 +37290,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc47e8e5a22d06d4098eda47cd2a304e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  engineSound: {fileID: 8300000, guid: 9564354c3ee6b10479155a29c02052ae, type: 3}
-  brakeSound: {fileID: 0}
-  hitSound: {fileID: 0}
+  minPitch: 0.6
+  maxPitch: 1.5
+  maxSpeed: 100
+  engineSound: {fileID: 8300000, guid: 0a503f7ccfeb7e04a84d16d09966e422, type: 3}
+  hitSound: {fileID: 8300000, guid: 26c9c2f5a99ec91428912acd696b83dd, type: 3}
   audioPitch: 1
 --- !u!82 &6588881394108200581
 AudioSource:
@@ -37612,7 +37614,7 @@ GameObject:
   - component: {fileID: 8518335471448039388}
   m_Layer: 0
   m_Name: building-i
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37667,7 +37669,7 @@ GameObject:
   - component: {fileID: 8699858349300979099}
   m_Layer: 0
   m_Name: building-skyscraper-e
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
