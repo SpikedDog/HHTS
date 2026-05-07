@@ -10,10 +10,12 @@ public class CustomerInteract : MonoBehaviour
     private bool isPlayerInRange = false;
     public CustomerDefault customerDefault;
     public bool customerActive;
+    [SerializeField] MyCarSound myCarSound;
 
     void Awake()
     {
         inputActions = new PlayerControls();
+        myCarSound = FindObjectOfType<MyCarSound>();
         //customerDefault = interactObject.GetComponent<CustomerDefault>();
     }
 
@@ -37,6 +39,7 @@ public class CustomerInteract : MonoBehaviour
         if (isPlayerInRange && customerDefault != null)
         {
             //Debug.Log("OnClick Active");
+            myCarSound.PickUpSound();
             customerDefault.Interact();
         }
     }

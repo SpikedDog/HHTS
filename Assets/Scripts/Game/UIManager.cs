@@ -24,6 +24,7 @@ public class UIManager : MonoBehaviour
     public TMP_Text totalText;
     public TMP_Text nameInputted;
     public GameObject background;
+    [SerializeField] MyCarSound myCarSound;
     public bool isGameOver = false;
     public bool isGameStarted = false;
     public int countdownTime;
@@ -37,8 +38,6 @@ public class UIManager : MonoBehaviour
     [Header("Leaderboard Attributes")]
     
     [SerializeField] TMP_InputField nameInputField;
-
-
 
     void Awake()
     {
@@ -63,12 +62,13 @@ public class UIManager : MonoBehaviour
         menuManager = UIManagerMenu.instance.gameObject;
         InGameUI = GameObject.Find("InGameUI");
         nameInput = GameObject.Find("NameInputField");
+        myCarSound = FindObjectOfType<MyCarSound>();
         nameInput.SetActive(false);
         nameInputText.SetActive(false);
         totalText.gameObject.SetActive(false);
         InGameUI.SetActive(false);
         background.SetActive(false);
-        Cursor.visible = enabled;
+        Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
         player.gameObject.GetComponent<GoofyNewControls>().enabled = false;
         StartCoroutine(CountDownStart());
@@ -134,7 +134,7 @@ public class UIManager : MonoBehaviour
         isGameOver = true;
         //Debug.Log("Game Over!");
         Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = enabled;
+        Cursor.visible = true;
         if (player != null)
         {
             var controls = player.GetComponent<GoofyNewControls>();
@@ -154,11 +154,13 @@ public class UIManager : MonoBehaviour
     {
         while (countdownTime > 0)
         {
+            myCarSound.TickerSound();
             countdownText.text = countdownTime.ToString();
             yield return new WaitForSeconds(1f);
             countdownTime--;
         }
         countdownText.text = "GO";
+        myCarSound.StartSound();
         isGameStarted = true;
         player.gameObject.GetComponent<GoofyNewControls>().enabled = true;
         yield return new WaitForSeconds(1f);
@@ -168,6 +170,7 @@ public class UIManager : MonoBehaviour
 
     IEnumerator EndCounter()
     {
+        myCarSound.PlayEndGameSound();
         while (endCountdown > 0)
         {
             countdownText.text = "GAME OVER";

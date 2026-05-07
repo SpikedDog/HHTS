@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Destination : MonoBehaviour
 {
-    
-    
+    [SerializeField] MyCarSound myCarSound;
+
+    void Start()
+    {
+        myCarSound = FindObjectOfType<MyCarSound>();
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -13,6 +18,8 @@ public class Destination : MonoBehaviour
             var hector = other.gameObject.GetComponentInChildren<CustomerDefault>();
             if (hector != null)
             {
+                myCarSound.PlayDeliverSound();
+                Debug.Log("Customer Dropped Off");
                 hector.transform.parent = transform;
                 hector.transform.position = transform.GetChild(0).position;
                 hector.DropOffCustomer();

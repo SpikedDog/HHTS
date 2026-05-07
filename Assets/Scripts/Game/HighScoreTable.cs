@@ -10,6 +10,8 @@ public class HighScoreTable : MonoBehaviour
     private Transform entryContainer;
     private Transform entryTemplate;
     private List<Transform> highScoreEntryTransformList;
+    private AudioSource audioSource;
+    [SerializeField] AudioClip newHighScoreSound;
 
     private void Awake()
     {
@@ -17,6 +19,7 @@ public class HighScoreTable : MonoBehaviour
         entryTemplate = entryContainer.Find("HSEntryTemplate");
         entryTemplate.gameObject.SetActive(false);
         Debug.Log(transform.Find("HSEntryContainer").Find("HSEntryTemplate"));
+        audioSource = GetComponent<AudioSource>();
 
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         HighScores highScores = JsonUtility.FromJson<HighScores>(jsonString);
@@ -58,6 +61,10 @@ public class HighScoreTable : MonoBehaviour
         foreach (HighScoreEntry highscoreEntry in highScores.highScoreEntryList)
         {
             CreateHighScoreEntry(highscoreEntry, entryContainer, highScoreEntryTransformList);
+            
+            //Play new high score sound
+            audioSource.volume = 0.125f;
+            audioSource.PlayOneShot(newHighScoreSound);
         }
     }
 
