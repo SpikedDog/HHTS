@@ -16843,7 +16843,7 @@ MonoBehaviour:
   pointsText: {fileID: 1241138052}
   objectivesText: {fileID: 15427192}
   riderScore: {fileID: 1136301975}
-  timeRemaining: 150
+  timeRemaining: 180
   points: 0
   nameInputText: {fileID: 2133593966}
   totalText: {fileID: 762889562}
